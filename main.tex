@@ -1,0 +1,117 @@
+% !TeX program = lualatex
+% !TeX root = main.tex
+% !TeX encoding = UTF-8
+
+\documentclass[12pt,a4paper]{article}
+
+% ---- Detecção do idioma
+\usepackage[brazil]{babel}
+
+% ---- Tipografia e fontes
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+\setmainfont{Poppins}[
+  Path=fonts/Poppins/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic
+]
+\setsansfont{Poppins}[
+  Path=fonts/Poppins/,
+  Extension=.ttf,
+  UprightFont=*-Regular,
+  BoldFont=*-Bold,
+  ItalicFont=*-Italic,
+  BoldItalicFont=*-BoldItalic
+]
+
+% ---- Layout e utilidades
+\usepackage{geometry}
+\geometry{margin=2.2cm}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=2pt, leftmargin=*}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\usepackage{hyperref}
+
+% ---- Metadados da apostila
+\newcommand{\titulo}{Google para Todos}
+\newcommand{\autor}{Turma Extensão III — ADS/IFRS - Campus: Farroupilha (2025/2)}
+\newcommand{\versao}{v1.0}
+\newcommand{\data}{2025/2}
+
+% ---- Cores (paleta inspirada no Google)
+\definecolor{dicas}{HTML}{4285F4}% azul (nome mantido para compatibilidade com o código abaixo)
+\definecolor{alerta}{HTML}{DB4437}
+\definecolor{conhecimentoExtra}{HTML}{F4B400}
+\definecolor{formulas}{HTML}{0F9D58}
+\definecolor{primary}{HTML}{020202}
+% Correções: cores referenciadas mas não definidas
+\definecolor{ggray}{HTML}{5F6368}
+\definecolor{ggreen}{HTML}{0F9D58}
+\definecolor{gyellow}{HTML}{F4B400}
+\definecolor{gred}{HTML}{DB4437}
+
+% ---- Hyperlinks
+
+\newif\ifprint
+
+% Toggle: Mudar entre perfil de tela e impressão
+\printfalse              % tela (padrão)
+% \printtrue             % impressão
+
+\ifprint
+  % ---- Perfil IMPRESSÃO (B/W, sem cores/caixas)
+  \hypersetup{
+    hidelinks,                % links ativos, sem cor/caixa
+    pdfauthor=\autor,
+    pdftitle=\titulo,
+    pdfstartview=FitH
+  }
+\else
+  % ---- Perfil TELA (links coloridos, navegação)
+  \hypersetup{
+    colorlinks=true,
+    allcolors=primary,        % usa a cor 'primary' para tudo
+    linktoc=all,              % todo item do sumário vira link
+    breaklinks=true,          % quebra de linha em URLs longas
+    pdfauthor=\autor,
+    pdftitle=\titulo,
+    pdfpagemode=UseOutlines   % abre com bookmarks
+  }
+\fi
+
+% ---- Títulos
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{ggray}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{0.6em}{}
+
+% ---- Caixas reutilizáveis
+\newtcolorbox{objetivos}[1][]{
+  breakable, colback=primary!5, colframe=primary, title=Objetivos, fonttitle=\bfseries, #1}
+\newtcolorbox{passos}[1][]{
+  breakable, colback=ggreen!5, colframe=formulas, title=Passo a passo, fonttitle=\bfseries, #1}
+\newtcolorbox{dica}[1][]{
+  breakable, colback=gyellow!10, colframe=conhecimentoExtra, title=Dica, fonttitle=\bfseries, #1}
+\newtcolorbox{atencao}[1][]{
+  breakable, colback=gred!5, colframe=alerta, title=Atenção, fonttitle=\bfseries, #1}
+\newtcolorbox{checagem}[1][]{
+  breakable, colback=white, colframe=dicas, title=Checklist de domínio, fonttitle=\bfseries, #1}
+
+ % ---- Macros úteis
+\newcommand{\tecla}[1]{\fbox{#1}}
+\newcommand{\produto}[1]{\textbf{#1}} % destacar nome de ferramenta
+
+
+\begin{document}
+
+hello word
+
+\end{document}
