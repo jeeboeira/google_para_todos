@@ -2,7 +2,7 @@
 % !TeX root = main.tex
 % !TeX encoding = UTF-8
 
-\documentclass[12pt,a4paper]{article}
+\documentclass[12pt,a4paper, oneside]{report}
 
 % ---- Detecção do idioma
 \usepackage[brazil]{babel}
@@ -112,6 +112,15 @@
 
 \begin{document}
 
-hello word
+\input{frontmatter/capa.tex}
+
+% (opcional) pré-texto em romanos
+\pagenumbering{roman}
+\tableofcontents
+\clearpage
+% corpo em arábicos a partir daqui
+\pagenumbering{arabic}
+
+\input{sections/exemplo/exemplo.tex}
 
 \end{document}
