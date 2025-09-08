@@ -40,6 +40,12 @@
 \usepackage{tcolorbox}
 \tcbuselibrary{skins,breakable}
 \usepackage{hyperref}
+\usepackage{siunitx}
+\sisetup{
+  %locale = DE,               % vírgula decimal e ponto como separador de milhar
+  space-before-unit = false, % "87%" em vez de "87 %"
+  number-unit-product = {},  % remove o espaço entre número e unidade
+}
 
 % ---- Metadados da apostila
 \newcommand{\titulo}{Google para Todos}
@@ -122,5 +128,8 @@
 \pagenumbering{arabic}
 
 \input{sections/exemplo/exemplo.tex}
+
+\chapter{Introdução}
+\input{sections/introducao/introducao}
 
 \end{document}
