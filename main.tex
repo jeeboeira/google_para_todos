@@ -18,19 +18,22 @@
   ItalicFont=*-Italic,
   BoldItalicFont=*-BoldItalic
 ]
-\setsansfont{Poppins}[
-  Path=fonts/Poppins/,
-  Extension=.ttf,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  ItalicFont=*-Italic,
-  BoldItalicFont=*-BoldItalic
-]
+% ---- Use fallback for missing glyphs (like arrows)
+\usepackage{newunicodechar}
+\newunicodechar{→}{\ensuremath{\rightarrow}} % seta direita
+%\newunicodechar{←}{\ensuremath{\leftarrow}}
+%\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
+%\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
+%\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
+
+
 
 % ---- Layout e utilidades
 \usepackage{geometry}
 \geometry{margin=2.2cm}
 \usepackage{graphicx}
+\graphicspath{{images/}} % Pasta padrão das figuras
+\usepackage[labelfont=bf,labelsep=space]{caption} % Formato da legenda
 \usepackage{xcolor}
 \usepackage{enumitem}
 \setlist{noitemsep, topsep=2pt, leftmargin=*}
@@ -46,6 +49,19 @@
   space-before-unit = false, % "87%" em vez de "87 %"
   number-unit-product = {},  % remove o espaço entre número e unidade
 }
+\usepackage{titlesec}
+\usepackage{float}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+
+% ---- Remove o rótulo do capítulo na página (fica só o título "Introdução")
+\titleformat{\chapter}[hang]
+  {\bfseries\Huge} % estilo do título
+  {\thechapter.}               % <-- sem rótulo ("Capítulo 2")
+  {0.37em}
+  {}
+
+% Ajustar espaçamentos acima/abaixo do título do capítulo
+\titlespacing*{\chapter}{0pt}{-1ex}{2ex}
 
 % ---- Metadados da apostila
 \newcommand{\titulo}{Google para Todos}
@@ -131,5 +147,10 @@
 
 \chapter{Introdução}
 \input{sections/introducao/introducao}
+
+\chapter{Google Drive}
+\input{sections/google_drive/google_drive}
+
+
 
 \end{document}
