@@ -52,13 +52,7 @@
 \usepackage{titlesec}
 \usepackage{float}
 \usepackage[backend=biber,style=authoryear]{biblatex}
-
-% ---- Remove o rótulo do capítulo na página (fica só o título "Introdução")
-\titleformat{\chapter}[hang]
-  {\bfseries\Huge} % estilo do título
-  {\thechapter.}               % <-- sem rótulo ("Capítulo 2")
-  {0.37em}
-  {}
+\usepackage{etoolbox} 
 
 % Ajustar espaçamentos acima/abaixo do título do capítulo
 \titlespacing*{\chapter}{0pt}{-1ex}{2ex}
@@ -80,6 +74,8 @@
 \definecolor{ggreen}{HTML}{0F9D58}
 \definecolor{gyellow}{HTML}{F4B400}
 \definecolor{gred}{HTML}{DB4437}
+\definecolor{chaptercolor}{HTML}{2E86C1}
+
 
 % ---- Hyperlinks
 
@@ -131,6 +127,45 @@
 \newcommand{\tecla}[1]{\fbox{#1}}
 \newcommand{\produto}[1]{\textbf{#1}} % destacar nome de ferramenta
 
+\newcommand{\ChapterTitleFormat}[1]{
+	\ifcsdef{@toclevel@chapter}{
+		#1
+	}{
+		% ---- Cria a faixa colorida ---
+		\begin{tikzpicture}[remember picture,overlay]
+			\fill[chaptercolor!90!black]
+			(current page.north west)
+			rectangle
+			([yshift=-1.5cm]current page.north east); % --- Controla o tamanho dela
+		\end{tikzpicture}
+		% --- Controla o quão pra cima o título do capítulo deve estar
+		\vspace*{-2.6cm}
+		
+		\tcbox[
+		colback=white,
+		colframe=chaptercolor!90!black,
+		boxrule=0.8pt,
+		arc=8pt, % -- Controla a curvatura das bordas
+		left=8pt,right=8pt,top=6pt,bottom=3pt, % --- Controla o padding interno
+		boxsep=0pt,
+		enhanced,
+		]{
+			\ifnum\value{chapter}>0
+				{\huge\textcolor{chaptercolor!90!black}{\bfseries \thechapter. #1}}% -- Com númeral
+			\else
+				{\huge\textcolor{chaptercolor!90!black}{\bfseries #1}}% --- Sem númeral
+			\fi
+		}
+		% --- Controla o quão pra cima o texto do elemento seguinte deve estar
+		\vspace{-1.2cm}
+	}
+}
+
+\titleformat{\chapter}[block]
+{\large\bfseries\color{black}} % Formatação base
+{} % label
+{0pt} % sep
+{\ChapterTitleFormat}
 
 \begin{document}
 
