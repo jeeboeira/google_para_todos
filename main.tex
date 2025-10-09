@@ -74,9 +74,29 @@
 \definecolor{ggreen}{HTML}{0F9D58}
 \definecolor{gyellow}{HTML}{F4B400}
 \definecolor{gred}{HTML}{DB4437}
+
+% ---- Cor dos capítulos
 \definecolor{chaptercolor}{HTML}{2E86C1}
+\definecolor{chaptercolor1}{HTML}{2E86C1} % Azul
+\definecolor{chaptercolor2}{HTML}{28B463} % Verde
+\definecolor{chaptercolor3}{HTML}{CA6F1E} % Laranja
+\definecolor{chaptercolor4}{HTML}{884EA0} % Roxo
 
-
+\newcommand{\getchaptercolor}{%
+	\ifcase\value{chapter}%
+	\color{chaptercolor1}% (0 - TOC, etc.)
+	\or
+	\colorlet{chaptercolor}{chaptercolor1}% 1
+	\or
+	\colorlet{chaptercolor}{chaptercolor2}% 2
+	\or
+	\colorlet{chaptercolor}{chaptercolor3}% 3
+	\or
+	\colorlet{chaptercolor}{chaptercolor4}% 4
+	\else
+	\colorlet{chaptercolor}{chaptercolor1}% fallback
+	\fi
+}
 % ---- Hyperlinks
 
 \newif\ifprint
@@ -128,6 +148,7 @@
 \newcommand{\produto}[1]{\textbf{#1}} % destacar nome de ferramenta
 
 \newcommand{\ChapterTitleFormat}[1]{
+	\getchaptercolor
 	\ifcsdef{@toclevel@chapter}{
 		#1
 	}{
