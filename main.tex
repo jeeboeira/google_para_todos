@@ -126,6 +126,7 @@
   }
 \fi
 
+
 % ---- Títulos
 \titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\large\bfseries\color{ggray}}{\thesubsection}{0.6em}{}
@@ -187,6 +188,45 @@
 {} % label
 {0pt} % sep
 {\ChapterTitleFormat}
+
+\newdimen\trianglesize
+\trianglesize=2cm % <- change this to make the triangle larger/smaller
+
+\AddToHook{shipout/background}{%
+	\ifnum\value{chapter}>0
+	\getchaptercolor
+	\begin{tikzpicture}[remember picture,overlay]
+		
+    	\ifodd\value{page}
+		% === Triangulo direito ===
+			\fill[chaptercolor] 
+			([xshift=0pt,yshift=-0.6\trianglesize]current page.north east) -- % base on right edge (inside)
+			([xshift=-0.6\trianglesize,yshift=0pt]current page.north east) -- % base on top edge (inside)
+			([xshift= 0.8\trianglesize,yshift= 0.8\trianglesize]current page.north east) -- % apex OUTSIDE
+			cycle;
+			
+			\draw[line width=0.12\trianglesize, chaptercolor]
+			([xshift=0cm]current page.north east) --
+			([xshift=0cm]current page.south east);
+		\else
+		% === Triangulo esquerdo ===
+			\fill[chaptercolor]
+			([xshift=0pt,yshift=-0.6\trianglesize]current page.north west) --
+			([xshift=0.6\trianglesize,yshift=0pt]current page.north west) --
+			([xshift=-0.8\trianglesize,yshift= 0.8\trianglesize]current page.north west) --
+			cycle;
+			
+			\draw[line width=0.12\trianglesize, chaptercolor]
+			([xshift=0cm]current page.north west) --
+			([xshift=0cm]current page.south west);
+		\fi
+		
+		
+
+	\end{tikzpicture}%
+	\fi
+}
+
 
 \begin{document}
 
