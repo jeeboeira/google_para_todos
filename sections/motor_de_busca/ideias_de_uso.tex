@@ -1,0 +1,52 @@
+% sections/motor_de_busca/motor_de_busca.tex
+% !TeX root = ../main.tex
+
+\section{Ideias de uso}
+
+Por fim, chegamos ao ponto onde conhecemos os operadores e como utilizar a ferramenta. Porém, é possível que ainda tenha um pouco de dificuldade em como montar as pesquisas utilizando tudo que vimos. Por isso, neste capítulo, que pode ser utilizado como uma referência para suas futuras pesquisas, iremos construir juntos pesquisas elaboradas para cenários hipotéticos.
+
+\textbf{Cenário 1: }Você está estudando e precisa encontrar artigos acadêmicos ou documentos oficiais sobre o impacto ambiental da mineração no Brasil, evitando notícias de jornais ou blogs de opinião.
+
+\codeblock{"impacto ambiental" mineração (site:.gov.br OR site:.edu.br) filetype:pdf -notícias}
+
+Essa pesquisa utilizou as aspas para focar no tópico a ser pesquisado, adicionou a palavra chave mineração, mas sem o uso das aspas, permitindo aparecer sinônimos e variações da palavra. Além disso foi adicionado filtros de sites, podendo ser do governo (.gov.br) ou sites de educação (.edu.br). Para trazer mais detalhes, foi filtrado apenas por PDFs e por fim foi removido todas as notícias utilizando a negação da palavra chave “notícias”.
+
+\hseparator
+
+\textbf{Cenário 2:} Você deseja ver como a inteligência artificial (IA) está evoluindo, porém com o recente aumento da popularidade do tema fica difícil de encontrar notícias antigas.
+
+\codeblock{"inteligência artificial" (site:.com OR site:.org) before:2015-01-01}
+
+Nessa pesquisa usamos aspas em “inteligência artificial” para obter o termo exato. O operador site: limitou os resultados a domínios confiáveis e abrangentes (.com e .org). Já o before restringiu a pesquisa a conteúdos publicados antes de 2015, permitindo localizar artigos e notícias mais antigas. Assim, conseguindo visualizar como o tema era abordado antes da popularização atual. 
+
+\hseparator
+
+\textbf{Cenário 3: }Você está planejando uma viagem para o Japão, mas os guias turísticos apresentam informações que você já cansou de ler, por isso resolve procurar por experiências de viajantes em fóruns.
+
+\codeblock{"viagem ao Japão" (site:reddit.com OR site:quora.com OR site:tripadvisor.com/forum)}
+
+As aspas em “viagem ao Japão” fixam a expressão exata. O uso do operador site: restringe a busca a sites que funcionam como fóruns ou espaços de discussão (Reddit, Quora e o fórum do TripAdvisor). Isso elimina guias comerciais e blogs promocionais, priorizando relatos e discussões de pessoas reais que já viajaram.
+
+\hseparator
+
+\textbf{Cenário 4:} Você quer acessar livros de filosofia que já estejam em domínio público, preferencialmente em bibliotecas digitais.
+
+\codeblock{"filosofia"AND "domínio público" (site:archive.org OR site:dominiopublico.gov.br) filetype:pdf}
+
+As aspas fixam as expressões “filosofia” e “domínio público”. O operador site: restringe a bibliotecas digitais conhecidas, como Archive.org e Domínio Público. O filetype:pdf traz versões digitais completas das obras. Assim, evita-se material pago ou restrito.
+
+\hseparator
+
+\textbf{Cenário 5:} Você escreveu um trabalho excelente, porém o professor comentou que por mais que o conteúdo esteja bom ele não segue as normas ABNT. Então você decide que quer localizar versões digitais das normas da ABNT sobre formatação de trabalhos.
+
+\codeblock{"ABNT" Formatação de Trabalhos (site:abnt.org.br OR site:.edu.br) filetype:pdf}
+
+As aspas garantem que a palavra ABNT apareça e a pesquisa por formatação de trabalhos ajuda a ferramenta a direcionar o conteúdo. O site: limita a sites oficiais e acadêmicos, como a ABNT e universidades. O filetype:pdf busca documentos em formato pronto para consulta.
+
+\hseparator
+
+\textbf{Cenário 6:} Você quer encontrar receitas veganas de sobremesas que possam ser feitas em menos de 30 minutos. Porém, está cansado de bolo e está sem chocolate em casa.
+
+\codeblock{"receita vegana" sobremesa "até 30 minutos" -chocolate -bolo}
+
+As aspas fixam “receita vegana” e “até 30 minutos”. As palavras sem aspas (sobremesa) permitem variações de termos. O operador - exclui resultados com chocolate ou bolo, filtrando para outras opções de sobremesa rápida.
