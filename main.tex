@@ -26,7 +26,8 @@
 %\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
 %\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
 
-
+% ---- Evitar avisos de underfull/overfull hbox
+\hbadness=10000   % não reporta Underfull \hbox
 
 % ---- Layout e utilidades
 \usepackage{geometry}
@@ -51,6 +52,7 @@
 }
 \usepackage{titlesec}
 \usepackage{float}
+\usepackage{csquotes}
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \usepackage{etoolbox} 
 
@@ -63,7 +65,7 @@
 
 % ---- Metadados da apostila
 \newcommand{\titulo}{Google para Todos}
-\newcommand{\autor}{Turma Extensão III — ADS/IFRS - Campus: Farroupilha (2025/2)}
+\newcommand{\autor}{Turma Extensão III — ADS/IFRS — Campus: Farroupilha (2025/2)}
 \newcommand{\versao}{v1.0}
 \newcommand{\data}{2025/2}
 
@@ -89,13 +91,13 @@
 \newcommand{\getchaptercolor}{%
 	\ifcase\value{chapter}%
 	\color{chaptercolor1}% (0 - TOC, etc.)
-	\or
+	\or{}
 	\colorlet{chaptercolor}{chaptercolor1}% 1
-	\or
+	\or{}
 	\colorlet{chaptercolor}{chaptercolor2}% 2
-	\or
+	\or{}
 	\colorlet{chaptercolor}{chaptercolor3}% 3
-	\or
+	\or{}
 	\colorlet{chaptercolor}{chaptercolor4}% 4
 	\else
 	\colorlet{chaptercolor}{chaptercolor1}% fallback
@@ -103,13 +105,13 @@
 }
 % ---- Hyperlinks
 
-\newif\ifprint
+\newif\ifprint{}
 
 % Toggle: Mudar entre perfil de tela e impressão
-\printfalse              % tela (padrão)
+\printfalse{}            % tela (padrão)
 % \printtrue             % impressão
 
-\ifprint
+\ifprint{}
   % ---- Perfil IMPRESSÃO (B/W, sem cores/caixas)
   \hypersetup{
     hidelinks,                % links ativos, sem cor/caixa
@@ -153,7 +155,7 @@
 \newcommand{\produto}[1]{\textbf{#1}} % destacar nome de ferramenta
 
 \newcommand{\ChapterTitleFormat}[1]{
-	\getchaptercolor
+	\getchaptercolor{}
 	\ifcsdef{@toclevel@chapter}{
 		#1
 	}{
@@ -193,12 +195,12 @@
 {0pt} % sep
 {\ChapterTitleFormat}
 
-\newdimen\trianglesize
+\newdimen\trianglesize{}
 \trianglesize=2cm % <- change this to make the triangle larger/smaller
 
 \AddToHook{shipout/background}{%
 	\ifnum\value{chapter}>0
-	\getchaptercolor
+	\getchaptercolor{}
 	\begin{tikzpicture}[remember picture,overlay]
 		
     	\ifodd\value{page}
@@ -291,6 +293,6 @@
 %\input{sections/documentos/documentos}
 %\input{sections/documentos/menu_inserir}
 
-\printbibliography
+%\printbibliography
 
 \end{document}
