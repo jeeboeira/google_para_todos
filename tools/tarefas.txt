@@ -1,0 +1,42 @@
+Docs - Ativar_desativar correção ortográfica + Listas
+Docs - Cabeçalho_rodapé
+Docs - Comandos e atalhos
+Docs - Contagem de palavras
+Docs - Download_Imprimir
+Docs - Edição colaborativa
+Docs - Exemplo prático_ confecção de Currículo
+Docs - Extensões
+Docs - Guias de documentos
+Docs - Histórico de versões
+Docs - Introdução Google Documentos
+Docs - Menu ferramentas - Parte 2
+Docs - Menu Ferramentas - Parte 1
+Docs - Menu Inserir - Parte 1
+Docs - Menu Inserir - Parte 2
+Docs - Status do Documento e Opção de uso offline
+Docs - Trabalhando com os estilos - parte 1
+Docs - Trabalhando com os estilos - parte 2
+Docs - Trabalhando com os estilos - parte 3
+
+Sheets - Introdução ao Google Sheets
+Sheets - Barra Superior
+Sheets - Formatações básicas de células e texto
+Sheets - Fórmulas, atalhos e organização
+Sheets - Gráficos
+Sheets - Tabelas Dinâmicas
+Sheets - Compartilhamento
+Sheets - Dicas e boas práticas
+
+Slides - Ajuda
+Slides - Aplicar temas
+Slides - Arquivo
+Slides - Colaboração e compartilhamento
+Slides - Editar
+Slides - Extensão
+Slides - Ferramentas
+Slides - Formatar
+Slides - Inserir
+Slides - Organizar
+Slides - Slide
+Slides - Utilizar Links
+Slides - Ver
