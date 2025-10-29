@@ -1,0 +1,159 @@
+% !TeX root = ../../main.tex
+% sections/planilhas/graficos.tex
+
+\section{Transformando dados em visualizações}
+Após a organização e a formatação dos dados em uma planilha, o próximo passo para extrair valor real dessas informações é a visualização. Os gráficos traduzem a complexidade dos dados em um formato visual que o cérebro pode processar de forma muito mais rápida e intuitiva.
+
+No entanto, a eficácia de um gráfico depende da escolha do tipo correto para os dados e para a visualização que se deseja obter. Cada tipo de gráfico tem uma finalidade específica. A tabela abaixo serve como um guia rápido para ajudar na seleção do gráfico mais apropriado para sua necessidade.
+
+\begin{table}[!ht]
+	\centering
+	\resizebox{\textwidth}{!}{%
+		\begin{tabular}{@{}p{2.5cm}p{4cm}p{5cm}p{4.5cm}@{}}
+			\toprule
+			\textbf{Tipo de Gráfico} & \textbf{Finalidade Principal} & \textbf{Exemplo de Pergunta que Responde} & \textbf{Estrutura de Dados Ideal} \\
+			\midrule
+			Coluna & Comparar valores entre categorias distintas. & “Qual produto vendeu mais em janeiro?” & Uma coluna para categorias (texto) e colunas subsequentes para valores (números). \\
+			Linha & Mostrar a evolução de dados ao longo do tempo. & “Como nossas vendas mensais mudaram ao longo do último ano?” & Uma coluna para o eixo do tempo (datas, meses) e colunas subsequentes para os valores a serem acompanhados. \\
+			Pizza & Exibir a proporção de cada categoria em um todo. & “Qual a porcentagem de nosso orçamento é gasta com marketing?” & Uma coluna para categorias (texto) e uma única coluna para os valores correspondentes (números). \\
+			\bottomrule
+		\end{tabular}
+	}
+	\caption{Relação entre tipos de gráficos, suas finalidades e estrutura de dados recomendada.}
+	\label{tab:tipos_graficos}
+\end{table}
+
+\subsection{Criando seu primeiro gráfico}
+
+A criação de um gráfico no Google Sheets é um processo direto, onde a qualidade e a clareza do seu gráfico final são um reflexo direto da organização da sua tabela de origem.
+
+\subsubsection{Passo 1: Seleção de dados}
+Antes de inserir um gráfico, é fundamental garantir que seus dados estejam estruturados de forma lógica e clara. A prática recomendada é organizar os dados em colunas com um cabeçalho claro e descritivo na primeira linha de cada coluna. Por exemplo, em uma tabela de vendas, a primeira coluna pode ser "Mês", a segunda "Produto A" e a terceira "Produto B".
+
+Após certificar que os dados estão devidamente estruturados, é preciso selecionar o intervalo de células que você deseja visualizar. Clique na primeira célula do seu conjunto de dados e arraste o mouse para incluir todas as linhas e colunas relevantes, incluindo os cabeçalhos.
+
+\subsubsection{Passo 2: Inserindo o gráfico}
+Com o intervalo de dados selecionado, navegue até a Barra de Menus e clique em \textbf{Inserir > Gráfico}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_22.png}
+	\caption{Exemplo de gráfico}
+	\label{fig:planilhas:graficos1}
+\end{figure}
+
+O Google Planilhas analisará os dados selecionados e inserirá automaticamente um tipo de gráfico que ele considera mais apropriado. Um painel lateral chamado Editor de Gráficos também aparecerá à direita da tela. É através deste editor que todo o controle sobre o gráfico é exercido.
+
+\subsection{Conhecendo o Editor de Gráficos}
+
+O Editor de Gráficos é dividido em duas abas principais, a primeira serve para definir a estrutura e os dados, a segunda para definir a aparência.
+
+\subsubsection{Aba Configuração}
+
+Nesta aba se encontram os fundamentos do gráfico, definindo o tipo de gráfico, o intervalo de dados e como as colunas e linhas são usadas para os Eixos e as Séries. É o local para garantir que os dados estão sendo representados corretamente.
+
+\subsubsection{Aba Personalizar}
+
+Nesta aba se encontram todos os aspectos estéticos do gráfico, como cores, fontes, títulos, legendas, linhas de grade e etc. É aqui que um gráfico funcional se transforma em uma visualização de fácil leitura.
+
+\section{Principais tipos de gráficos}
+
+Apesar de o Google Planilhas apresentar diversos tipos de gráficos, três deles formam a base para a grande maioria dos gráficos: Coluna, Linha e Pizza. É importante notar que, embora visualmente distintos, a estrutura de dados deles segue um padrão comum: colunas que contêm categorias ou rótulos (texto, datas) e colunas que contêm valores (números).
+
+
+\subsection{Gráfico de Coluna}
+\begin{itemize}
+	\item \textbf{O que é?} Uma categoria de gráficos com colunas dispostas na vertical, ideal para comparar valores entre diferentes categorias discretas.
+	\item \textbf{Para que serve?} Perfeito para responder a perguntas como “Qual vendedor teve o melhor desempenho?” ou “Qual foi a receita em cada trimestre?”. 
+	\item \textbf{Estrutura de dados ideal:} Os dados devem ser organizados com as categorias a serem comparadas em uma coluna (que se tornará o eixo horizontal, ou eixo X) e os valores numéricos correspondentes em colunas adjacentes (que formarão as barras no eixo vertical, ou eixo Y).
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_23.png}
+	\caption{Exemplo de gráfico de linha}
+	\label{fig:planilhas:graficos2}
+\end{figure}
+
+
+\subsection{Gráfico de Linha}
+\begin{itemize}
+	\item \textbf{O que é?} Uma categoria de gráficos que conecta pontos de dados com uma linha, ideal para identificar tendências, padrões, flutuações e aceleração ou desaceleração em uma métrica. 
+	\item \textbf{Para que serve?} Perfeito para responder perguntas como “Nossa base de usuários está crescendo?” ou “Como a temperatura variou ao longo do dia?”.
+	\item \textbf{Estrutura de dados ideal:} Uma primeira coluna com os dados do eixo do tempo (dias, meses, anos) e as colunas seguintes com os valores numéricos que você deseja acompanhar ao longo desse tempo.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_24.png}
+	\caption{Exemplo de gráfico de pizza}
+	\label{fig:planilhas:graficos3}
+\end{figure}
+
+
+\subsection{Gráfico de Pizza}
+\begin{itemize}
+	\item \textbf{O que é?} Uma categoria de gráficos onde um círculo é subdividido em partes individuais que se relacionam com um todo. Cada parte representa uma categoria, e o tamanho da fatia é proporcional à sua porcentagem do total. 
+	\item \textbf{Para que serve?} Ideal para responder a perguntas como “Qual porcentagem do nosso tráfego vem de cada rede social?” ou “Como nosso orçamento está dividido entre os departamentos?”.
+	\item \textbf{Estrutura de dados ideal:} Uma coluna para os nomes das categorias e uma única coluna adjacente com seus valores numéricos correspondentes. 
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_25.png}
+	\caption{Personalização de gráficos}
+	\label{fig:planilhas:graficos4}
+\end{figure}
+
+\subsection{Personalização Avançada}
+Após a criação de um gráfico básico, o Google Sheets oferece uma vasta gama de opções de personalização para refinar a aparência e a clareza da visualização.  
+O \textbf{Editor de Gráficos}, acessível no painel lateral, é a ferramenta central para todas essas modificações, dividindo as opções em duas abas principais: \textbf{Configurações} e \textbf{Personalizar}.  
+Enquanto a aba de \textbf{Configuração} lida com a estrutura e os dados, a aba de \textbf{Personalizar} é onde a mágica estética realmente acontece, transformando um gráfico funcional em uma ferramenta de comunicação visual impactante.
+
+\subsubsection{Estilo do Gráfico}
+O estilo geral define a primeira impressão do gráfico. Nesta seção do Editor de Gráficos, é possível ajustar elementos como o tipo de gráfico, cores de fundo, bordas e fonte padrão.  
+
+\begin{itemize}
+	\item \textbf{Tipo de Gráfico:} Embora o Google Sheets sugira um tipo inicial, é possível alterá-lo para explorar outras representações visuais.
+	\item \textbf{Cor de Fundo:} Define a cor de plano de fundo da área do gráfico.
+	\item \textbf{Borda do Gráfico:} Adiciona uma borda ao redor, destacando-o do restante do conteúdo.
+	\item \textbf{Fonte:} Afeta a legibilidade de todos os textos do gráfico, incluindo títulos, rótulos e legendas.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_26.png}
+	\caption{Inserção do gráfico}
+	\label{fig:planilhas:graficos5}
+\end{figure}
+
+\subsubsection{Títulos, Eixos e Legendas}
+Esses elementos são cruciais para contextualizar e interpretar o gráfico.  
+\begin{itemize}
+	\item \textbf{Título do Gráfico:} Deve ser curto, claro e indicar o principal insight.
+	\item \textbf{Títulos dos Eixos:} Identificam o que está sendo representado, como “Meses”, “Vendas (R\$)” ou “Número de Clientes”.
+	\item \textbf{Legendas:} Identificam séries de dados por meio de cores ou padrões e podem ter posição, fonte e tamanho personalizados.
+\end{itemize}
+
+\subsubsection{Formatando as Séries de Dados}
+As séries de dados são o elemento central do gráfico.  
+\begin{itemize}
+	\item \textbf{Cor da Série:} Altere as cores das barras, linhas ou fatias de pizza.
+	\item \textbf{Estilo da Linha ou Marcadores:} Ajuste espessura, tipo de traço e marcadores (círculos, quadrados etc.).
+	\item \textbf{Rótulos de Dados:} Exibem valores diretamente no gráfico, devendo ser usados com moderação.
+	\item \textbf{Linha de Tendência:} Evidencia padrões ou projeções (linear, exponencial, polinomial etc.).
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_30.png}
+	\caption{Personalização da série de dados}
+	\label{fig:planilhas:graficos6}
+\end{figure}
+
+\subsubsection{Linhas de Grade e Marcas}
+As linhas de grade e marcas de escala facilitam a leitura e interpretação dos valores.  
+\begin{itemize}
+	\item \textbf{Linhas de Grade:} Ajudam na estimativa de valores. Podem ser principais ou secundárias, com cor e estilo personalizáveis.
+	\item \textbf{Marcas de Escala (ticks):} Traços posicionados nos eixos para indicar valores correspondentes. Ajustáveis em posição, comprimento e frequência.
+\end{itemize}

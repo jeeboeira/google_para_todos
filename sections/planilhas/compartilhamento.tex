@@ -1,0 +1,87 @@
+% !TeX root = ../../main.tex
+% sections/planilhas/compartilhamento.tex
+
+\section{Trabalhando em equipe no Google Planilhas}
+Além da funcionalidade de uma ferramenta de planilha individual, no Google Planilhas é possível trabalhar em colaboração com outras pessoas em tempo real. As funcionalidades de compartilhamento, comunicação e controle de versões são os pilares que permitem que equipes trabalhem de maneira eficiente, eliminando barreiras geográficas e otimizando fluxos de trabalho.
+
+\subsection{Entendendo a colaboração em tempo real}
+O principal diferencial do Google Planilhas nos ambientes de trabalho é a sua capacidade de permitir que múltiplos usuários visualizem e editem o mesmo documento simultaneamente. Este conceito elimina a prática obsoleta e propensa a erros de gerenciar múltiplas versões de um mesmo arquivo, como \textit{Relatorio\_Vendas\_v1.xlsx} ou \textit{Relatorio\_Vendas\_v2.xlsx}. Em vez disso, a informação é centralizada num único arquivo, acessível a todos os membros da equipe ao mesmo tempo. 
+
+Por exemplo, ao organizar um evento como um churrasco entre amigos, uma planilha compartilhada pode ser usada para listar os itens necessários. Ao invés de um organizador centralizar as informações através de um grupo de mensagens, cada participante pode acessar a planilha e marcar os itens que irá levar. As atualizações são vistas por todos instantaneamente, evitando itens duplicados e garantindo que nada seja esquecido.
+
+\subsection{Compartilhando sua planilha}
+
+O processo é iniciado através do menu superior, navegando até \textbf{Arquivo > Compartilhar > Compartilhar} com outras pessoas. A partir daí, existem dois métodos principais para conceder acesso. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/planilhas/imagem_32.png}
+	\caption{Menu de compartilhamento}
+	\label{fig:planilhas:compartilhamento1}
+\end{figure}
+
+O primeiro método é o Convite Direto. Ao inserir os endereços de e-mail dos colaboradores, um convite formal é enviado. Esta abordagem oferece um maior nível de controle e segurança pois o acesso fica estritamente vinculado às contas Google dos convidados. É o método preferencial para ambientes corporativos e projetos com informação sensível.
+
+O segundo método é o Compartilhamento por Link. Esta opção gera um URL único que pode ser distribuído. Ao utilizar esta funcionalidade, é crucial configurar o nível de acesso associado ao link. A opção "Restrito" garante que apenas as pessoas adicionadas por e-mail possam abrir o link. A opção "Qualquer pessoa com o link" torna a planilha acessível a qualquer um que possua o URL, o que representa um risco de segurança significativo se o documento contiver informações confidenciais. Este tipo de acesso é mais apropriado para materiais de consulta pública ou documentos que não contenham dados sensíveis.
+
+\subsection{Gerenciando permissões}
+
+Nem todos os colaboradores necessitam do mesmo nível de acesso a uma planilha. O Google Planilhas oferece três níveis de permissão principais. 
+
+\begin{itemize}
+	\item \textbf{Leitor:} essa permissão permite apenas visualizar o conteúdo da planilha, incluindo dados, fórmulas e gráficos. Os utilizadores não podem fazer qualquer tipo de alteração.
+	\item \textbf{Comentador:} esse papel permite que o utilizador visualize todo o conteúdo e adicione comentários em células específicas, mas sem a capacidade de editar os dados diretamente. 
+	\item \textbf{Editor:} essa permissão concede poder total sobre a planilha. Um editor pode alterar o conteúdo das células, modificar a formatação, adicionar ou excluir abas e até mesmo gerir as configurações de compartilhamento, adicionando ou removendo outros colaboradores.
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/planilhas/imagem_33.png}
+	\caption{Exemplo de comentário de outro usuário}
+	\label{fig:planilhas:compartilhamento2}
+\end{figure}
+
+\subsection{Comentários e notas}
+
+As ferramentas de comentários do Google Planilhas foram projetadas para que as discussões ocorram diretamente dentro do documento, atreladas a células ou intervalos específicos, eliminando a ambiguidade de comunicações externas.
+
+Para adicionar um comentário basta selecionar a célula desejada, clicar com o botão direito e escolher "Comentário". Uma caixa de diálogo aparecerá, permitindo a inserção da mensagem. Uma funcionalidade poderosa dentro dos comentários é o uso do símbolo "@" seguido pelo nome ou e-mail de um colaborador. Isto não só direciona a mensagem para a pessoa específica, mas também lhe envia uma notificação por e-mail, garantindo que a questão seja vista.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/planilhas/imagem_34.png}
+	\caption{Exemplo de nota}
+	\label{fig:planilhas:compartilhamento3}
+\end{figure}
+
+Um comentário possui um ciclo de vida: ele pode ser respondido, criando uma discussão; pode ser editado; e uma vez que a questão tenha sido resolvida, pode ser marcado como "Resolvido". Esta ação oculta o comentário da visualização principal, limpando a interface e servindo como um registo de que a tarefa foi concluída.
+
+É importante distinguir entre Comentários e Notas. Enquanto os comentários são projetados para diálogos dinâmicos e discussões, as Notas (acessíveis também pelo menu do botão direito) servem para anotações estáticas e informativas. Uma nota é ideal para explicar o propósito de uma fórmula complexa, a origem de um dado específico ou para deixar instruções sobre como uma determinada célula deve ser preenchida.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/planilhas/imagem_35.png}
+	\caption{Botão compartilhar}
+	\label{fig:planilhas:compartilhamento4}
+\end{figure}
+
+
+\subsection{Histórico de versões}
+
+É uma espécie de registo de segurança automático que captura todas as alterações feitas no documento ao longo do tempo, identificando quem fez cada alteração e quando. O histórico de versões atende a duas necessidades principais.
+
+\begin{itemize}
+	\item \textbf{Auditoria e rastreabilidade:} permite verificar exatamente quem modificou um valor específico e em que momento. Em ambientes de trabalho colaborativos, isto é fundamental para a responsabilização e para entender a evolução dos dados.
+	
+	\item \textbf{Recuperação de erros:} por exemplo, se uma aba inteira for acidentalmente apagada ou se uma fórmula crítica for corrompida, basta clicar no ícone do histórico de versões (\autoref{fig:planilhas:compartilhament5}) ou navegar para \textbf{Arquivo > Histórico de versões > Ver histórico de versões}. Uma barra lateral então é exibida com uma lista detalhada de todas as versões anteriores do documento, agrupadas por data e por autor da modificação. É possível selecionar qualquer versão anterior, visualizá-la, e com um único clique no botão "Restaurar esta versão", reverter o documento inteiro para aquele estado anterior, recuperando todo o trabalho perdido.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.9\textwidth]{images/planilhas/imagem_36.png}
+	\caption{Interface do Google Planilhas}
+	\label{fig:planilhas:compartilhament5}
+\end{figure}
+
+

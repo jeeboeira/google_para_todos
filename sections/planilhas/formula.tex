@@ -1,0 +1,232 @@
+% !TeX root = ../../main.tex
+% sections/planilhas/formula.tex
+
+\section{Transformando dados em informação}
+	Após explorar a interface e as ferramentas de formatação, este capítulo avança para o núcleo funcional do Google Planilhas. As funcionalidades aqui apresentadas permitem tornar os dados inteligentes e interativos
+Serão abordados três tópicos fundamentais:
+\begin{itemize}
+	\item \textbf{Fórmulas:} Responsáveis por automatizar cálculos e implementar lógicas complexas.
+	\item \textbf{Atalhos de teclado:} Utilizados para otimizar o fluxo de trabalho, economizando tempo e esforço em tarefas repetitivas.
+	\item \textbf{Ferramentas para organização:} Técnicas para estruturar, gerenciar e proteger dados, garantindo integridade e usabilidade especialmente em projetos colaborativos e com grande volume de dados.
+\end{itemize}
+
+\section{Fórmulas essenciais}
+
+Como já dito, as fórmulas permitem a execução de cálculos e a automatização de tarefas que, de outra forma, seriam manuais e propensas a erros. A partir delas que as planilhas começam a se tornar ambientes dinâmicos e não mais estáticos.
+
+\subsection{Entendendo a Anatomia de uma Fórmula}
+Toda fórmula no Google Planilhas, sem exceção, começa com o sinal de igual (=). A partir disso, o restante da estrutura será composta pelos seguintes elementos-chave:
+
+\begin{itemize}
+	\item \textbf{Funções:} São comandos predefinidos que realizam uma operação específica. Por exemplo “SOMA” ou “MÉDIA”.
+	
+	\item \textbf{Argumentos:} São os dados que a função utiliza para realizar seu cálculo. Eles são inseridos entre parênteses () e separados por ponto e vírgula (;). Por exemplo, na fórmula “=SOMA(A1;  B1)”, A1 e B1 são os argumentos.
+	
+	\item \textbf{Referências de célula:} São usadas para referenciar as células que contém os dados que servirão de argumentos, por exemplo “A1”.  Isso torna a fórmula dinâmica; se o valor em A1 mudar, o resultado da fórmula será atualizado automaticamente.
+	
+	\item \textbf{Intervalos:} Para operar conjuntos contínuos de células, utiliza-se um intervalo indicado por dois pontos (:). Por exemplo, A1:A10 faz referência a todas as células compreendidas no intervalo de A1 até A10.
+\end{itemize}
+
+\subsection{Fórmulas Matemáticas e de Contagem}
+
+São as funções mais básicas e frequentemente utilizadas, formando a base para a maioria das análises quantitativas.
+
+\begin{itemize}
+	\item \textbf{SOMA:}
+	\begin{itemize}
+		\item \textbf{O que é?} Uma função que adiciona todos os números em um intervalo de células.
+		
+		\item\textbf{Para que serve?} Calcular a soma total de intervalos de forma precisa.
+		Sintaxe: =SOMA(valor1; valor2; [...])
+		
+		\item \textbf{Exemplo prático:} Em uma planilha de controle de despesas com valores nas células de C2 a C20, a fórmula “=SOMA(C2:C20)” na célula C21 calcularia o gasto total do período.
+	\end{itemize}
+	
+	\item \textbf{MÉDIA:}
+	\begin{itemize}
+		\item \textbf{O que é?} Uma função que calcula a média aritmética de um conjunto de números.
+		
+		\item \textbf{Para que serve?} Encontrar o valor central ou a média aritmética de uma série de dados.\\
+		\textbf{Sintaxe:} =MÉDIA(valor1; valor2; [...])
+		
+		\item \textbf{Exemplo prático:} Para obter a nota média de uma turma de alunos cujas notas estão no intervalo B2:B30, a fórmula “=MÉDIA(B2:B30)” seria a solução.
+	\end{itemize}
+	
+	\item \textbf{MÁXIMO / MÍNIMO:}
+	\begin{itemize}
+		\item \textbf{O que é?} Duas funções distintas que encontram, respectivamente, o maior (MÁXIMO) e o menor (MÍNIMO) valor numérico dentro de um intervalo.
+		
+		\item \textbf{Para que serve?} Identificar rapidamente valores extremos em um conjunto de dados.\\
+		\textbf{Sintaxe:} =MÁXIMO(intervalo) e =MÍNIMO(intervalo)
+		
+		\item \textbf{Exemplo prático:} Em um inventário de produtos com preços listados de D2 a D100, “=MÁXIMO(D2:D100)” mostraria o preço do item mais caro enquanto “=MÍNIMO(D2:D100)” identificaria o mais barato.
+	\end{itemize}
+	
+	\item \textbf{CONT.NÚM / CONT.VALORES:}
+	\begin{itemize}
+		\item \textbf{O que são?} Duas funções de contagem com uma importante diferença. CONT.NÚM conta apenas células que contêm números, enquanto CONT.VALORES conta todas as células que não estão vazias.
+		
+		\item \textbf{Para que servem?} CONT.NÚM serve para informar o total de registros numéricos existentes em um intervalo. CONT.VALORES retorna o total de entradas preenchidas.\\
+		\textbf{Sintaxes:} =CONT.NÚM(valor1; valor2; [...]) e =CONT.VALORES(valor1; valor2; [...])
+		
+		\item \textbf{Exemplo prático:} Em uma lista de tarefas, “=CONT.VALORES(A2:A100)” contaria quantas tarefas foram descritas. Se a coluna B tivesse as datas de conclusão, “=CONT.NÚM(B2:B100)” contaria quantas tarefas já foram finalizadas (assumindo que apenas as concluídas têm data).
+	\end{itemize}
+\end{itemize}
+	
+\subsection{Fórmulas de Pesquisa:}
+Funções que automatizam a busca por dados correspondentes entre listas e tabelas.
+	\begin{itemize}
+	\item \textbf{PROCV:}
+	\begin{itemize}
+		\item \textbf{O que é?} Uma ferramenta de busca que procura por um valor específico em uma coluna da tabela e retorna o valor correspondente de uma coluna diferente na mesma linha.
+		
+		\item \textbf{Para que serve?} Automatizar a busca e o cruzamento de informações entre listas.\\
+		\textbf{Sintaxe:} =PROCV(chave\_de\_pesquisa; intervalo; índice; [classificado])
+		
+		\item \textbf{Exemplo prático:} Imagine duas tabelas: uma com “ID do Produto” e “Quantidade Vendida” e outra com “ID do Produto”, “Nome do Produto” e “Preço”. Para descobrir o preço de um item vendido na primeira tabela, você usaria o PROCV. A fórmula “=PROCV(A2; 'Tabela de Preços'!A:C; 3; 0)” procuraria o ID do produto da célula A2 na tabela de preços e retornaria o valor da terceira coluna (o preço).
+	\end{itemize}
+\end{itemize}
+
+	
+\subsection{Fórmulas Lógicas:}
+Fórmulas que permitem tomadas de decisão automáticas pela planilha, retornando diferentes resultados com base em condições predefinidas.
+	\begin{itemize}
+	
+	\item \textbf{SE:}
+	\begin{itemize}
+		\item \textbf{O que é?} Uma função que avalia um teste lógico, retornando um valor se a condição for verdadeira e outro valor se for falsa.
+		
+		\item \textbf{Para que serve?} Automatizar respostas e classificações com base em determinados critérios.\\
+		\textbf{Sintaxe:} =SE(condição; valor\_se\_verdadeiro; valor\_se\_falso)
+		
+		\item \textbf{Exemplo prático:} Em uma planilha de notas de alunos com a nota final na célula C2, a fórmula “=SE(C2>=7; 'Aprovado'; 'Reprovado')” exibiria automaticamente o status do aluno.
+	\end{itemize}
+	
+	\item \textbf{E / OU:}
+	\begin{itemize}
+		\item \textbf{O que são?} Funções auxiliares frequentemente utilizadas dentro da fórmula “SE” para testar múltiplas condições simultaneamente. A fórmula “E” retorna VERDADEIRO somente se todas as condições forem atendidas, enquanto a fórmula “OU” retorna VERDADEIRO se pelo menos uma das condições for atendida.
+		
+		\item \textbf{Para que servem?} Criar testes lógicos mais complexos e com múltiplos critérios.\\
+		\textbf{Sintaxes:} =E(condição1; condição2; [...]) e =OU(condição1; condição2; [...])
+		
+		\item \textbf{Exemplo prático:} Para conceder um bônus a um vendedor que atingiu a meta de vendas de R\$10.000 (célula B2) e tem mais de 2 anos na empresa (célula C2), a fórmula seria: “=SE(E(B2>10000; C2>2); 'Bônus Concedido'; 'Sem Bônus')”.
+	\end{itemize}
+\end{itemize}
+	
+\section{Atalhos de teclado:}
+
+Embora a Barra de Ferramentas de Acesso Rápido ofereça ícones para as ações mais comuns, o próximo passo em relação a produtividade e otimização de tempo são os atalhos de teclado. O uso de atalhos minimiza a necessidade de alternar entre o teclado e o mouse, permitindo que o usuário mantenha um fluxo de trabalho contínuo e mais rápido.
+
+Para visualizar a lista completa de atalhos a qualquer momento, basta pressionar  \tecla{Ctrl + /} (em Windows) ou \tecla{\cmd  + /} (em macOS).
+
+\subsection{Tabelas de atalhos essenciais}
+As tabelas a seguir apresentam os principais atalhos para o dia a dia, organizados por função e sistema operacional, servindo como uma referência prática para o uso diário.
+
+\section{Atalhos Universais Mais Importantes}
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{@{}lll@{}}
+		\toprule
+		\textbf{Ação} & \textbf{Atalho (Windows)} & \textbf{Atalho (macOS)} \\ 
+		\midrule
+		Copiar & Ctrl + C & \cmd + C \\
+		Colar & Ctrl + V & \cmd + V \\
+		Colar Apenas Valores & Ctrl + Shift + V & \cmd + Shift + V \\
+		Recortar & Ctrl + X & \cmd + X \\
+		Desfazer & Ctrl + Z & \cmd + Z \\
+		Refazer & Ctrl + Y & \cmd + Y \\
+		Negrito & Ctrl + B & \cmd + B \\
+		Itálico & Ctrl + I & \cmd + I \\
+		Inserir Link & Ctrl + K & \cmd + K \\
+		Selecionar Tudo & Ctrl + A & \cmd + A \\
+		Salvar & Ctrl + S & \cmd + S \\
+		\bottomrule
+	\end{tabular}
+	\caption{Principais atalhos universais utilizados nas planilhas.}
+	\label{tab:atalhos_universais}
+\end{table}
+
+\section{Atalhos de Navegação e Seleção}
+\begin{table}[!ht]
+	\centering
+	\begin{tabular}{@{}lll@{}}
+		\toprule
+		\textbf{Ação} & \textbf{Atalho (Windows)} & \textbf{Atalho (macOS)} \\ 
+		\midrule
+		Selecionar coluna inteira & Ctrl + Espaço & \cmd + Espaço \\
+		Selecionar linha inteira & Shift + Espaço & Shift + Espaço \\
+		Ir para o início da linha & Home & Fn + Seta para a esquerda \\
+		Ir para o fim da linha & End & Fn + Seta para a direita \\
+		Ir para o início da planilha & Ctrl + Home & \cmd + Fn + Seta para a esquerda \\
+		Ir para o fim da planilha & Ctrl + End & \cmd + Fn + Seta para a direita \\
+		\bottomrule
+	\end{tabular}
+	\caption{Atalhos de navegação e seleção de células em planilhas.}
+	\label{tab:atalhos_navegacao}
+\end{table}
+
+\section{Organização de dados}
+
+A organização dos dados é um dos pontos mais importantes em qualquer planilha. Recursos como ordenação, mesclagem, congelamento e proteção de intervalos tornam o trabalho mais estruturado e seguro, especialmente em projetos colaborativos.
+
+\subsection{Ordenação de Dados}
+Ordenar dados é essencial para tornar informações mais legíveis e fáceis de analisar. No Google Sheets, é possível organizar os valores em ordem crescente (A a Z, 0 a 9) ou decrescente (Z a A, 9 a 0).
+
+\begin{itemize}
+	\item \textbf{Como ordenar:} Selecione o intervalo de dados ou a coluna desejada, vá até o menu Dados > Classificar página e escolha entre A-Z (crescente) ou Z-A (decrescente).
+	\item \textbf{Exemplo prático:} Em uma lista de alunos com as notas na coluna B, ao ordenar de maior para menor, os primeiros registros exibem automaticamente os melhores resultados.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.5\textwidth]{images/planilhas/imagem_18.png}
+	\caption{Exemplo de tabela}
+	\label{fig:planilhas:formula1}
+\end{figure}
+
+\subsection{Mesclar Células}
+A mesclagem combina duas ou mais células em uma única, geralmente usada para títulos ou destaques visuais.
+
+\begin{itemize}
+	\item \textbf{Como mesclar:} Selecione as células, clique em Formatar > Mesclar células, então escolha a opção desejada: mesclar tudo, mesclar horizontalmente ou mesclar verticalmente.
+	\item \textbf{Atenção:} ao mesclar, somente o conteúdo da célula superior esquerda é mantido; os outros dados são descartados.
+	\item \textbf{Exemplo prático:} Em uma tabela de controle mensal, pode-se mesclar as células A1 até D1 para criar um título centralizado chamado “Relatório de Vendas - Setembro”.
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.6\textwidth]{images/planilhas/imagem_19.png}
+	\caption{Exemplo de tabela com células mescladas}
+	\label{fig:planilhas:formula2}
+\end{figure}
+
+\subsection{Congelar Linhas e Colunas}
+
+O recurso de congelar mantém linhas ou colunas fixas na tela durante a rolagem da planilha. Isso facilita a leitura em planilhas extensas.
+\begin{itemize}
+	\item \textbf{Como congelar:} Selecione a linha ou coluna que deseja manter visível, vá até o menu Ver > Congelar, escolha entre 1 linha, 2 linhas, até a linha atual, ou equivalente para colunas.
+	\item \textbf{Exemplo prático:} Em uma planilha de inventário com centenas de produtos, congelar a linha 1 (cabeçalhos) garante que os títulos das colunas, como “Produto” e “Preço”, fiquem sempre visíveis ao rolar a tela.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.6\textwidth]{images/planilhas/imagem_20.png}
+		\caption{Linhas e colunas congeladas}
+		\label{fig:planilhas:formula3}
+	\end{figure}
+\end{itemize}
+
+\subsection{Proteger Intervalos}
+A proteção de intervalos evita alterações indesejadas em partes específicas da planilha. Isso é útil em ambientes colaborativos, garantindo que apenas usuários autorizados possam editar determinadas áreas.
+
+\begin{itemize}
+	\item  \textbf{Como proteger:} Selecione o intervalo ou célula, clique em Dados > Proteger páginas e intervalos e defina quem pode editar (apenas você ou pessoas específicas).
+	
+	\item \textbf{Exemplo prático:} Em um relatório financeiro compartilhado, o intervalo contendo fórmulas de cálculo pode ser protegido para que apenas o administrador consiga alterar, enquanto os demais colaboradores podem inserir dados em outras células normalmente.	
+\end{itemize}
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=.6\textwidth]{images/planilhas/imagem_21.png}
+		\caption{Linhas e colunas congeladas}
+		\label{fig:planilhas:formula4}
+	\end{figure}

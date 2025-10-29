@@ -1,0 +1,112 @@
+% !TeX root = ../../main.tex
+% sections/planilhas/formatacao.tex
+
+\section{Manipulando a Planilha}
+Dando seguimento às partes importantes do Google Planilhas, vamos aprender a trabalhar e manipular a planilha em si. 
+
+\subsection{Inserção de dados}
+Podemos iniciar clicando em uma das células dispostas na planilha, o que faz com que ela seja selecionada. Cada célula possui uma coordenada única, formada pela combinação da letra da coluna e do número da linha. Essas coordenadas podem ser identificadas facilmente no campo ao lado da Barra de Fórmulas, apresentada anteriormente.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.9\textwidth]{images/planilhas/imagem_12.png}
+	\caption{Coluna e linha de uma célula}
+	\label{fig:planilhas:formatacao1}
+\end{figure}
+
+Após selecionar a célula desejada, basta digitar o valor (sendo texto, número, data ou fórmula) e pressionar Enter. Para editar um conteúdo já existente, clique duas vezes sobre a célula ou edite diretamente na Barra de Fórmulas após selecioná-la.
+
+\subsection{Formatação de células}
+Depois de inserir os dados, uma prática indispensável é formatar a planilha. A formatação de células permite alterar aspectos como estilo de texto, cores e bordas, tornando as informações mais legíveis e organizadas. A formatação também ajuda a destacar pontos-chave da tabela, o que facilita a interpretação.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.9\textwidth]{images/planilhas/imagem_13.png}
+	\caption{Formatação das células}
+	\label{fig:planilhas:formatacao2}
+\end{figure}
+
+Exemplos práticos de formatação:
+\begin{itemize}
+	\item Aplicar negrito aos cabeçalhos da tabela.
+	\item Alterar a cor de fundo de uma coluna para destacar valores importantes.
+	\item Inserir bordas para separar diferentes blocos de informações.
+	\item Usar cores no texto para categorizar dados (ex.: vermelho para gastos, verde para receitas).
+\end{itemize}
+
+A quantidade de customização fica sempre a seu critério e bom senso. Uma planilha bem organizada visualmente facilita a leitura, mas o excesso pode acabar poluindo a visualização.
+
+Uma boa dica é utilizar o botão “Pintar Formatação” (representado por um ícone de rolo de pintura, na Barra de Ferramentas). Ele permite copiar o estilo de uma célula ou intervalo e aplicar rapidamente em outros locais da planilha, economizando tempo e garantindo a consistência visual.
+
+\subsection{Ajustar colunas e linhas}
+Com frequência, os conteúdos não cabem na largura padrão da coluna ou na altura da linha. Mas é possível ajustar manualmente o tamanho posicionando o cursor na borda da coluna ou linha até que ele se transforme em uma seta dupla, e então arrastar para expandir ou reduzir.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\textwidth]{images/planilhas/imagem_14.png}
+	\caption{Ajuste das colunas}
+	\label{fig:planilhas:formatacao3}
+\end{figure}
+
+Outro recurso útil é o ajuste automático, que é feito com um duplo clique na borda da coluna/linha, assim adaptando automaticamente o tamanho em relação ao conteúdo presente.
+
+\subsection{Validação de dados}
+
+Para evitar erros de digitação e manter um padrão de preenchimento, é possível utilizar a validação de dados. Ao aplicar regras de validação a uma célula ou a um intervalo de células, restringimos os tipos de valores aceitos, garantindo maior qualidade e consistência nas informações, especialmente em bases de dados extensas e complexas.
+
+Exemplo prático: em uma planilha de controle de pagamentos, configurar uma lista suspensa que permita apenas as opções “Pago” ou “Pendente”.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\textwidth]{images/planilhas/imagem_15.png}
+	\caption{Tabela com colunas com valores limitados}
+	\label{fig:planilhas:formatacao4}
+\end{figure}
+
+
+Para utilizar a ferramenta: Selecione o intervalo desejado; No menu superior, clique em “Dados” > “Validação de dados”; Uma barra lateral de regras abrirá com as seguintes opções:
+\begin{itemize}
+	\item \textbf{Aplicar ao intervalo:} define as células onde a regra será usada.
+	\item \textbf{Critérios:} permite escolher o tipo de regra (no caso, um menu suspenso).
+	
+	\item \textbf{Itens do menu:} aqui inserimos as opções permitidas, como “Pago” e “Pendente”. É possível até personalizar as cores dos itens.
+	
+	\item \textbf{Opções avançadas:} você pode mostrar uma mensagem de ajuda ou determinar o que acontece se alguém tentar inserir valores fora da lista.
+	
+	\item \textbf{Estilo de exibição:} define como a lista será mostrada (ícone, seta ou texto simples).
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\textwidth]{images/planilhas/imagem_16.png}
+	\caption{Menu de validação de dados}
+	\label{fig:planilhas:formatacao5}
+\end{figure}
+
+No exemplo, foi marcada a caixa “Rejeitar a entrada” para impedir que valores diferentes de “Pago” ou “Pendente” sejam digitados. Assim, a planilha se torna mais confiável e organizada.
+
+\subsection{Filtros}
+Ao trabalhar com grandes volumes de informações, os filtros no Google Planilhas permitem destacar apenas os dados relevantes sem a necessidade de excluir nada da planilha. Eles podem ser aplicados a colunas inteiras, ocultando os registros que não se enquadram nos critérios definidos. Além disso, é possível combinar vários filtros simultaneamente, como por nome e por cidade.
+
+O Google Planilhas oferece diferentes opções de filtragem:
+\begin{itemize}
+	\item \textbf{Filtrar por cor:} possibilita selecionar dados com base na cor de preenchimento da célula ou na cor do texto. Isso é útil para destacar visualmente informações importantes e depois isolá-las para análise.
+	
+	\item \textbf{Filtrar por condição:} aplica regras lógicas, como "maior que", "menor que", "contém texto" ou "data anterior a". Essa opção traz flexibilidade para criar filtros dinâmicos, ajustando-se a critérios específicos.
+	
+	\item \textbf{Filtrar por valores:} permite escolher ou desmarcar valores específicos presentes na coluna. É a forma mais direta de filtrar, pois você define exatamente quais entradas deseja visualizar.	
+\end{itemize}
+
+Além dos filtros básicos, existe também a funcionalidade de \textbf{“Visualizações de filtro”}. Ela possibilita que diferentes usuários criem e salvem suas próprias visualizações em uma mesma planilha, sem interferir na exibição dos demais. Esse recurso é especialmente útil em ambientes colaborativos, onde cada pessoa pode analisar os dados de acordo com seus objetivos. Assim, cada usuário pode nomear e alternar entre suas visualizações personalizadas, mantendo a planilha organizada e eficiente, com foco nos dados mais relevantes para cada análise.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=.3\textwidth]{images/planilhas/imagem_17.png}
+	\caption{Menu de configuração da coluna}
+	\label{fig:planilhas:formatacao6}
+\end{figure}
+
+Por exemplo: em uma planilha de vendas, é possível aplicar um filtro para mostrar apenas os clientes de uma cidade específica ou as vendas realizadas em determinado período.
