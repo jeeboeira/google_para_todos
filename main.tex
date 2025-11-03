@@ -57,6 +57,14 @@
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \usepackage{etoolbox} 
 
+% Numerar até o nível \paragraph
+\setcounter{secnumdepth}{3} % numera até \paragraph
+\setcounter{tocdepth}{2} 	% aparece no sumário
+
+% Formatação para \paragraph como “subsubsubsection”
+\titleformat{\paragraph}[block]{\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{1ex}{1ex}
+
 \renewcommand{\topfraction}{0.9}
 \renewcommand{\textfraction}{0.1}
 \renewcommand{\floatpagefraction}{0.9}
@@ -294,10 +302,11 @@
 %\input{sections/gmail/responder_encaminhar_marcar_emails.tex}
 
 \chapter{agenda}
-\input{sections/agenda/introducao_google_agenda.tex}
+%\input{sections/agenda/introducao_google_agenda.tex}
 %\input{sections/agenda/configuracoes.tex}
 %\input{sections/agenda/dicas_e_boas_praticas.tex}
 %\input{sections/agenda/gerenciamento_de_multiplas_agendas.tex}
+\input{sections/agenda/gerenciamento_entradas_no_calendario.tex}
 
 %\chapter{Documentos Google}
 %\input{sections/documentos/documentos}
