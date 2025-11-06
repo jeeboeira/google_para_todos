@@ -2,247 +2,131 @@
 % !TeX root = main.tex
 % !TeX encoding = UTF-8
 
-\documentclass[12pt,a4paper, oneside]{report}
+\documentclass[12pt,a4paper,oneside]{report}
 
-% ---- Detecção do idioma
+% ------------------------------------------------------------
+% IDIOMA, METADADOS (defina antes do hypersetup)
+% ------------------------------------------------------------
 \usepackage[brazil]{babel}
 
-% ---- Tipografia e fontes
-\usepackage{fontspec}
-\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
-\setmainfont{Poppins}[
-  Path=fonts/Poppins/,
-  Extension=.ttf,
-  UprightFont=*-Regular,
-  BoldFont=*-Bold,
-  ItalicFont=*-Italic,
-  BoldItalicFont=*-BoldItalic
-]
-% ---- Use fallback for missing glyphs (like arrows)
-\usepackage{newunicodechar}
-\usepackage{menukeys}
-\newunicodechar{→}{\ensuremath{\rightarrow}} % seta direita
-%\newunicodechar{←}{\ensuremath{\leftarrow}}
-%\newunicodechar{↔}{\ensuremath{\leftrightarrow}}
-%\newunicodechar{⇒}{\ensuremath{\Rightarrow}}
-%\newunicodechar{⇔}{\ensuremath{\Leftrightarrow}}
-
-% ---- Evitar avisos de underfull/overfull hbox
-\hbadness=10000   % não reporta Underfull \hbox
-
-% ---- Layout e utilidades
-\usepackage{geometry}
-\geometry{margin=2.2cm}
-\usepackage{graphicx}
-\graphicspath{{images/}} % Pasta padrão das figuras
-\usepackage[labelfont=bf,labelsep=space]{caption} % Formato da legenda
-\usepackage{xcolor}
-\usepackage{enumitem}
-\setlist{noitemsep, topsep=2pt, leftmargin=*}
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{titlesec}
-\usepackage{tcolorbox}
-\tcbuselibrary{skins,breakable}
-\usepackage{hyperref}
-\usepackage{siunitx}
-\sisetup{
-  %locale = DE,               % vírgula decimal e ponto como separador de milhar
-  space-before-unit = false, % "87%" em vez de "87 %"
-  number-unit-product = {},  % remove o espaço entre número e unidade
-}
-\usepackage{titlesec}
-\usepackage{float}
-\usepackage{csquotes}
-\usepackage[backend=biber,style=authoryear]{biblatex}
-\usepackage{etoolbox} 
-
-\renewcommand{\topfraction}{0.9}
-\renewcommand{\textfraction}{0.1}
-\renewcommand{\floatpagefraction}{0.9}
-
-% Ajustar espaçamentos acima/abaixo do título do capítulo
-\titlespacing*{\chapter}{0pt}{-1ex}{2ex}
-
-% ---- Metadados da apostila
+% ---- Metadados da apostila (defina antes do hypersetup)
 \newcommand{\titulo}{Google para Todos}
 \newcommand{\autor}{Turma Extensão III — ADS/IFRS — Campus: Farroupilha (2025/2)}
 \newcommand{\versao}{v1.0}
 \newcommand{\data}{2025/2}
 
-% ---- Cores (paleta inspirada no Google)
-\definecolor{dicas}{HTML}{4285F4}% azul (nome mantido para compatibilidade com o código abaixo)
+% ------------------------------------------------------------
+% TIPOGRAFIA & FONTE
+% ------------------------------------------------------------
+\usepackage{fontspec} % exige XeLaTeX ou LuaLaTeX
+\defaultfontfeatures{Ligatures=TeX, Scale=MatchLowercase}
+\setmainfont{Poppins}[
+Path=fonts/Poppins/,
+Extension=.ttf,
+UprightFont=*-Regular,
+BoldFont=*-Bold,
+ItalicFont=*-Italic,
+BoldItalicFont=*-BoldItalic
+]
+
+% fallback para alguns glyphs
+\usepackage{newunicodechar}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\usepackage{menukeys}
+
+% microtypography (melhora justificação)
+\usepackage{microtype}
+
+% ------------------------------------------------------------
+% LAYOUT E FIGURAS
+% ------------------------------------------------------------
+\usepackage[a4paper,margin=2.2cm]{geometry}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{array}
+
+% ------------------------------------------------------------
+% CORES
+% ------------------------------------------------------------
+\usepackage{xcolor}
+\definecolor{dicas}{HTML}{4285F4}
 \definecolor{alerta}{HTML}{DB4437}
 \definecolor{conhecimentoExtra}{HTML}{F4B400}
 \definecolor{formulas}{HTML}{0F9D58}
 \definecolor{primary}{HTML}{020202}
-% Correções: cores referenciadas mas não definidas
 \definecolor{ggray}{HTML}{5F6368}
 \definecolor{ggreen}{HTML}{0F9D58}
 \definecolor{gyellow}{HTML}{F4B400}
 \definecolor{gred}{HTML}{DB4437}
 
-% ---- Cor dos capítulos
-\definecolor{chaptercolor}{HTML}{2E86C1}
-\definecolor{chaptercolor1}{HTML}{2E86C1} % Azul
-\definecolor{chaptercolor2}{HTML}{28B463} % Verde
-\definecolor{chaptercolor3}{HTML}{CA6F1E} % Laranja
-\definecolor{chaptercolor4}{HTML}{884EA0} % Roxo
+% cores por capítulo
+\definecolor{catIntroducao}{HTML}{2E86C1}      % Azul
+\definecolor{catBusca}{HTML}{28B463}           % Verde
+\definecolor{catDrive}{HTML}{F4C20D}           % Amarelo Google
+\definecolor{catFormularios}{HTML}{884EA0}     % Roxo
+\definecolor{catGmail}{HTML}{DB4437}           % Vermelho
+\definecolor{catAgenda}{HTML}{00ACC1}          % Ciano
+\definecolor{catDocs}{HTML}{1A73E8}            % Azul Google Docs
+\definecolor{catPlanilhas}{HTML}{0F9D58}       % Verde Sheets
+\definecolor{catSlides}{HTML}{F4B400}          % Laranja Google Slides
+\definecolor{catBibliografia}{HTML}{5F6368}    % Cinza neutro
 
-\newcommand{\getchaptercolor}{%
-	\ifcase\value{chapter}%
-	\color{chaptercolor1}% (0 - TOC, etc.)
-	\or{}
-	\colorlet{chaptercolor}{chaptercolor1}% 1
-	\or{}
-	\colorlet{chaptercolor}{chaptercolor2}% 2
-	\or{}
-	\colorlet{chaptercolor}{chaptercolor3}% 3
-	\or{}
-	\colorlet{chaptercolor}{chaptercolor4}% 4
-	\else
-	\colorlet{chaptercolor}{chaptercolor1}% fallback
-	\fi
-}
-% ---- Hyperlinks
-
-\newif\ifprint{}
-
-% Toggle: Mudar entre perfil de tela e impressão
-\printfalse{}            % tela (padrão)
-% \printtrue             % impressão
-
-\ifprint{}
-  % ---- Perfil IMPRESSÃO (B/W, sem cores/caixas)
-  \hypersetup{
-    hidelinks,                % links ativos, sem cor/caixa
-    pdfauthor=\autor,
-    pdftitle=\titulo,
-    pdfstartview=FitH
-  }
-\else
-  % ---- Perfil TELA (links coloridos, navegação)
-  \hypersetup{
-    colorlinks=true,
-    allcolors=primary,        % usa a cor 'primary' para tudo
-    linktoc=all,              % todo item do sumário vira link
-    breaklinks=true,          % quebra de linha em URLs longas
-    pdfauthor=\autor,
-    pdftitle=\titulo,
-    pdfpagemode=UseOutlines   % abre com bookmarks
-  }
-\fi
-
-
-% ---- Títulos
-\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{0.6em}{}
-\titleformat{\subsection}{\large\bfseries\color{ggray}}{\thesubsection}{0.6em}{}
-\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{0.6em}{}
-
-% ---- Caixas reutilizáveis
-\newtcolorbox{objetivos}[1][]{
-  breakable, colback=primary!5, colframe=primary, title=Objetivos, fonttitle=\bfseries, #1}
-\newtcolorbox{passos}[1][]{
-  breakable, colback=ggreen!5, colframe=formulas, title=Passo a passo, fonttitle=\bfseries, #1}
-\newtcolorbox{dica}[1][]{
-  breakable, colback=gyellow!10, colframe=conhecimentoExtra, title=Dica, fonttitle=\bfseries, #1}
-\newtcolorbox{atencao}[1][]{
-  breakable, colback=gred!5, colframe=alerta, title=Atenção, fonttitle=\bfseries, #1}
-\newtcolorbox{checagem}[1][]{
-  breakable, colback=white, colframe=dicas, title=Checklist de domínio, fonttitle=\bfseries, #1}
-
- % ---- Macros úteis
-\newcommand{\tecla}[1]{\fbox{#1}}
-\newcommand{\produto}[1]{\textbf{#1}} % destacar nome de ferramenta
-
-\newcommand{\ChapterTitleFormat}[1]{
-	\getchaptercolor{}
-	\ifcsdef{@toclevel@chapter}{
-		#1
-	}{
-		% ---- Cria a faixa colorida ---
-		\begin{tikzpicture}[remember picture,overlay]
-			\fill[chaptercolor!90!black]
-			(current page.north west)
-			rectangle
-			([yshift=-1.5cm]current page.north east); % --- Controla o tamanho dela
-		\end{tikzpicture}
-		% --- Controla o quão pra cima o título do capítulo deve estar
-		\vspace*{-2.6cm}
-		
-		\tcbox[
-		colback=white,
-		colframe=chaptercolor!90!black,
-		boxrule=0.8pt,
-		arc=8pt, % -- Controla a curvatura das bordas
-		left=8pt,right=8pt,top=6pt,bottom=3pt, % --- Controla o padding interno
-		boxsep=0pt,
-		enhanced,
-		]{
-			\ifnum\value{chapter}>0
-				{\huge\textcolor{chaptercolor!90!black}{\bfseries \thechapter. #1}}% -- Com númeral
-			\else
-				{\huge\textcolor{chaptercolor!90!black}{\bfseries #1}}% --- Sem númeral
-			\fi
-		}
-		% --- Controla o quão pra cima o texto do elemento seguinte deve estar
-		\vspace{-1.2cm}
-	}
+% ------------------------------------------------------------
+% LISTAS, CITAÇÕES, UNIDADES
+% ------------------------------------------------------------
+\usepackage{enumitem}
+\setlist{itemsep=8pt, topsep=6pt}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\sisetup{
+	space-before-unit = false,
+	number-unit-product = {}
 }
 
-\titleformat{\chapter}[block]
-{\large\bfseries\color{black}} % Formatação base
-{} % label
-{0pt} % sep
-{\ChapterTitleFormat}
-
-\newdimen\trianglesize{}
-\trianglesize=2cm % <- change this to make the triangle larger/smaller
-
-\AddToHook{shipout/background}{%
-	\ifnum\value{chapter}>0
-	\getchaptercolor{}
-	\begin{tikzpicture}[remember picture,overlay]
-		
-    	\ifodd\value{page}
-		% === Triangulo direito ===
-			\fill[chaptercolor] 
-			([xshift=0pt,yshift=-0.6\trianglesize]current page.north east) -- % base on right edge (inside)
-			([xshift=-0.6\trianglesize,yshift=0pt]current page.north east) -- % base on top edge (inside)
-			([xshift= 0.8\trianglesize,yshift= 0.8\trianglesize]current page.north east) -- % apex OUTSIDE
-			cycle;
-			
-			\draw[line width=0.12\trianglesize, chaptercolor]
-			([xshift=0cm]current page.north east) --
-			([xshift=0cm]current page.south east);
-		\else
-		% === Triangulo esquerdo ===
-			\fill[chaptercolor]
-			([xshift=0pt,yshift=-0.6\trianglesize]current page.north west) --
-			([xshift=0.6\trianglesize,yshift=0pt]current page.north west) --
-			([xshift=-0.8\trianglesize,yshift= 0.8\trianglesize]current page.north west) --
-			cycle;
-			
-			\draw[line width=0.12\trianglesize, chaptercolor]
-			([xshift=0cm]current page.north west) --
-			([xshift=0cm]current page.south west);
-		\fi
-		
-		
-
-	\end{tikzpicture}%
-	\fi
-}
-
+% ------------------------------------------------------------
+% LINKS, BIBLATEX E HYPERREF
+% ------------------------------------------------------------
+\usepackage{indentfirst}
+\usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{sections/motor_de_busca/Motor de Busca.bib}
 \addbibresource{sections/google_drive/google_drive.bib}
 
+\usepackage{hyperref}
+\newif\ifprint
+\printfalse % tela por padrão
+% \printtrue % descomente para modo impressão
+
+\ifprint
+\hypersetup{
+	hidelinks,
+	pdfauthor=\autor,
+	pdftitle=\titulo,
+	pdfstartview=FitH
+}
+\else
+\hypersetup{
+	colorlinks=true,
+	allcolors=primary,
+	linktoc=all,
+	breaklinks=true,
+	pdfauthor=\autor,
+	pdftitle=\titulo,
+	pdfpagemode=UseOutlines
+}
+\fi
+
+% ------------------------------------------------------------
+% MACROS ÚTEIS
+% ------------------------------------------------------------
+\newcommand{\tecla}[1]{\fbox{#1}}
+\newcommand{\produto}[1]{\textbf{#1}}
+
 \newcommand{\codeblock}[1]{%
 	\vspace{1em}%
-	\begin{tcolorbox}[colback=gray!5,colframe=gray!40,boxrule=0.4pt,arc=8pt,enhanced jigsaw,]
-		\begin{center}
-			\texttt{#1}
-		\end{center}
+	\begin{tcolorbox}[colback=gray!5,colframe=gray!40,boxrule=0.4pt,arc=8pt,enhanced jigsaw]
+		\begin{center}\texttt{#1}\end{center}
 	\end{tcolorbox}
 	\vspace{1em}%
 }
@@ -253,63 +137,251 @@
 	\vspace{1em}
 }
 
+% ------------------------------------------------------------
+% TIKZ, GADGETS VISUAIS E BACKGROUND
+% ------------------------------------------------------------
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes,positioning}
+\newdimen\trianglesize
+\trianglesize=2cm
+
+% ------------------------------------------------------------
+% TITULOS E FORMATAÇÃO
+% ------------------------------------------------------------
+\usepackage{setspace}
+\onehalfspacing
+
+\setcounter{secnumdepth}{4}
+
+% inclui no sumário
+\setcounter{tocdepth}{4} 
+
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-1ex}{2ex}
+\titlespacing*{\section}{0pt}{14pt}{8pt}
+\titlespacing*{\subsection}{0pt}{12pt}{6pt}
+
+\titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{ggray}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{0.6em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}[]
+\titlespacing*{\paragraph}{0pt}{6pt}{2pt}
+
+
+% rotina de seleção de cor do capítulo (corrigida e simples)
+\newcommand{\setchaptercolor}{%
+	\ifcase\value{chapter}%
+	\colorlet{chaptercolor}{catIntroducao}
+	\or
+	\colorlet{chaptercolor}{catIntroducao}
+	\or
+	\colorlet{chaptercolor}{catBusca}
+	\or
+	\colorlet{chaptercolor}{catDrive}
+	\or
+	\colorlet{chaptercolor}{catFormularios}
+	\or
+	\colorlet{chaptercolor}{catGmail}
+	\or
+	\colorlet{chaptercolor}{catAgenda}
+	\or
+	\colorlet{chaptercolor}{catDocs}
+	\or
+	\colorlet{chaptercolor}{catPlanilhas}
+	\or
+	\colorlet{chaptercolor}{catSlides}
+	\else
+	\colorlet{chaptercolor}{catBibliografia}
+	\fi
+}
+
+% estilo do título de capítulo com faixa + caixa
+\newcommand{\ChapterTitleFormat}[1]{%
+	\setchaptercolor%
+	\ifnum\value{chapter}>0
+	% capa colorida na parte superior
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[chaptercolor!90!black] 
+		(current page.north west) rectangle ([yshift=-1.5cm]current page.north east);
+	\end{tikzpicture}
+	\vspace*{-2.7cm}
+	\tcbox[
+	colback=white,
+	colframe=chaptercolor!90!black,
+	boxrule=0.8pt,
+	arc=8pt,
+	left=8pt,right=8pt,top=6pt,bottom=3pt,
+	boxsep=0pt,
+	enhanced,
+	]{%
+		{\huge\textcolor{chaptercolor!90!black}{\bfseries \thechapter. #1}}%
+	}
+	\vspace{-1.2cm}
+	\else
+	% sem número (ex.: prefácio)
+	\begin{tikzpicture}[remember picture,overlay]
+		\fill[chaptercolor!90!black] 
+		(current page.north west) rectangle ([yshift=-1.5cm]current page.north east);
+	\end{tikzpicture}
+	\vspace*{-2.6cm}
+	\tcbox[
+	colback=white,
+	colframe=chaptercolor!90!black,
+	boxrule=0.8pt,
+	arc=8pt,
+	left=8pt,right=8pt,top=6pt,bottom=3pt,
+	boxsep=0pt,
+	enhanced,
+	]{%
+		{\huge\textcolor{chaptercolor!90!black}{\bfseries #1}}%
+	}
+	\vspace{-1.2cm}
+	\fi
+}
+
+\titleformat{\chapter}[block]{\large\bfseries\color{black}}{}{0pt}{\ChapterTitleFormat}
+
+% Add background triangles per página (shipout hook)
+\AddToHook{shipout/background}{%
+	\ifnum\value{chapter}>0
+	\setchaptercolor
+	\begin{tikzpicture}[remember picture,overlay]
+		\ifodd\value{page}
+		% triângulo direito
+		\fill[chaptercolor] 
+		([xshift=0pt,yshift=-0.6\trianglesize]current page.north east) -- 
+		([xshift=-0.6\trianglesize,yshift=0pt]current page.north east) -- 
+		([xshift= 0.8\trianglesize,yshift= 0.8\trianglesize]current page.north east) --
+		cycle;
+		\draw[line width=0.12\trianglesize, chaptercolor]
+		([xshift=0cm]current page.north east) -- ([xshift=0cm]current page.south east);
+		\else
+		% triângulo esquerdo
+		\fill[chaptercolor]
+		([xshift=0pt,yshift=-0.6\trianglesize]current page.north west) --
+		([xshift=0.6\trianglesize,yshift=0pt]current page.north west) --
+		([xshift=-0.8\trianglesize,yshift= 0.8\trianglesize]current page.north west) --
+		cycle;
+		\draw[line width=0.12\trianglesize, chaptercolor]
+		([xshift=0cm]current page.north west) -- ([xshift=0cm]current page.south west);
+		\fi
+	\end{tikzpicture}
+	\fi
+}
+
+% ------------------------------------------------------------
+% CAIXAS VISUAIS
+% ------------------------------------------------------------
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+\newtcolorbox{objetivos}[1][]{
+	breakable, colback=primary!5, colframe=primary, title=Objetivos, fonttitle=\bfseries, #1}
+\newtcolorbox{passos}[1][]{
+	breakable, colback=ggreen!5, colframe=formulas, title=Passo a passo, fonttitle=\bfseries, #1}
+\newtcolorbox{dica}[1][]{
+	breakable, colback=gyellow!10, colframe=conhecimentoExtra, title=Dica, fonttitle=\bfseries, #1}
+\newtcolorbox{atencao}[1][]{
+	breakable, colback=gred!5, colframe=alerta, title=Atenção, fonttitle=\bfseries, #1}
+\newtcolorbox{checagem}[1][]{
+	breakable, colback=white, colframe=dicas, title=Checklist de domínio, fonttitle=\bfseries, #1}
+
+% código (listings)
+\usepackage{listings}
+\lstset{
+	basicstyle=\ttfamily\small,
+	breaklines=true,
+	frame=none,
+	showstringspaces=false
+}
+
+% se preferir minted (requere -shell-escape), comente listings e ative minted
+% \usepackage{minted}
+
+% ------------------------------------------------------------
+% RODAPÉS / HEADERS
+% ------------------------------------------------------------
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{\titulo}}
+\fancyhead[R]{\small\textit{\leftmark}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% ------------------------------------------------------------
+% OUTRAS CONFIGS E AJUSTES
+% ------------------------------------------------------------
+\usepackage{csquotes} % já carregado acima (seguro repetir)
+\hbadness=10000 % suprime underfull warnings
+
+% ------------------------------------------------------------
+% INÍCIO DO DOCUMENTO
+% ------------------------------------------------------------
 \begin{document}
+	
+	\input{frontmatter/capa.tex}
+	
+	% pré-texto em romanos
+	\pagenumbering{roman}
+	\tableofcontents
+	\clearpage
+	
+	% corpo em arábicos
+	\pagenumbering{arabic}
 
-\input{frontmatter/capa.tex}
+%\input{sections/exemplo/exemplo.tex}
 
-% (opcional) pré-texto em romanos
-\pagenumbering{roman}
-\tableofcontents
-\clearpage
-% corpo em arábicos a partir daqui
-\pagenumbering{arabic}
+\chapter{Introdução}
+\input{sections/introducao/introducao}
 
-\input{sections/exemplo/exemplo.tex}
+\chapter{Motor de Busca}
+\input{sections/motor_de_busca/introducao.tex}
+\input{sections/motor_de_busca/visao_geral.tex}
+\input{sections/motor_de_busca/operadores.tex}
+\input{sections/motor_de_busca/ideias_de_uso.tex}
+\input{sections/motor_de_busca/boas_praticas.tex}
 
-%\chapter{Introdução}
-%\input{sections/introducao/introducao}
+\chapter{Google Drive}
+\input{sections/google_drive/introducao}
+\input{sections/google_drive/compartilhamento_e_permissoes.tex}
+\input{sections/google_drive/desktop.tex}
+\input{sections/google_drive/sincronizacao_e_backup.tex}
+\input{sections/google_drive/integracao_ferramentas.tex}
+\input{sections/google_drive/colaboracao.tex}
 
-%\chapter{Google Drive}
-%\input{sections/google_drive/introducao}
-%\input{sections/google_drive/compartilhamento_e_permissoes.tex}
-%\input{sections/google_drive/desktop.tex}
-%\input{sections/google_drive/sincronizacao_e_backup.tex}
-%\input{sections/google_drive/integracao_ferramentas.tex}
-%\input{sections/google_drive/colaboracao.tex}
+\chapter{Formulários}
+\vfill
 
-%\chapter{Motor de Busca}
-%\input{sections/motor_de_busca/introducao.tex}
-%\input{sections/motor_de_busca/visao_geral.tex}
-%\input{sections/motor_de_busca/operadores.tex}
-%\input{sections/motor_de_busca/ideias_de_uso.tex}
-%\input{sections/motor_de_busca/boas_praticas.tex}
+\chapter{Gmail}
+\input{sections/gmail/introducao_gmail.tex}
+\input{sections/gmail/categorias_marcadores_filtros.tex}
+\input{sections/gmail/configuracoes_avancadas.tex}
+\input{sections/gmail/dicas_e_boas_praticas.tex}
+\input{sections/gmail/escrever_enviar_download_anexos_emails_com_estrela.tex}
+\input{sections/gmail/exclusao_reg_leitura_adiar.tex}
+\input{sections/gmail/responder_encaminhar_marcar_emails.tex}
 
-%\chapter{Gmail}
-%\input{sections/gmail/introducao_gmail.tex}
-%\input{sections/gmail/categorias_marcadores_filtros.tex}
-%\input{sections/gmail/configuracoes_avancadas.tex}
-%\input{sections/gmail/dicas_e_boas_praticas.tex}
-%\input{sections/gmail/escrever_enviar_download_anexos_emails_com_estrela.tex}
-%\input{sections/gmail/exclusao_reg_leitura_adiar.tex}
-%\input{sections/gmail/responder_encaminhar_marcar_emails.tex}
-
-\chapter{agenda}
+\chapter{Agenda}
 \input{sections/agenda/configuracoes.tex}
 
-%\chapter{Documentos Google}
-%\input{sections/documentos/documentos}
-%\input{sections/documentos/menu_inserir}
+\chapter{Documentos Google}
+\input{sections/documentos/documentos}
+\input{sections/documentos/menu_inserir}
 
-%\chapter{Planilhas}
-%\input{sections/planilhas/introducao.tex}
-%\input{sections/planilhas/barra.tex}
-%\input{sections/planilhas/formatacao.tex}
-%\input{sections/planilhas/formula.tex}
-%\input{sections/planilhas/graficos.tex}
-%\input{sections/planilhas/tabelas.tex}
-%\input{sections/planilhas/compartilhamento.tex}
-%\input{sections/planilhas/dicas.tex}
+\chapter{Planilhas}
+\input{sections/planilhas/introducao.tex}
+\input{sections/planilhas/barra.tex}
+\input{sections/planilhas/formatacao.tex}
+\input{sections/planilhas/formula.tex}
+\input{sections/planilhas/graficos.tex}
+\input{sections/planilhas/tabelas.tex}
+\input{sections/planilhas/compartilhamento.tex}
+\input{sections/planilhas/dicas.tex}
 
-%\printbibliography
+\chapter{Apresentações}
+\vfill
+
+\printbibliography[heading=bibnumbered,title={Bibliografia}]
 
 \end{document}
