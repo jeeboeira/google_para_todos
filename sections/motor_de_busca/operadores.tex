@@ -5,9 +5,9 @@
 
 A ferramenta permite a pesquisa digitando qualquer termo na barra de pesquisa, porém, para melhor utilizar o poder dela, é necessário aprender sobre os operadores de pesquisa. Eles são termos específicos que, ao serem digitados, permitem alterar o comportamento da ferramenta como um todo, podendo aumentar a precisão dos resultados.
 
-O operador mais simples que se pode usar é as aspas. Ao colocar um termo entre-as é possível filtrar todos os sites cujo a palavra aparece exatamente como escrita, evitando o uso de sinônimos ou palavras similares.
+O operador mais simples que se pode usar é colocar palavras entre aspas. Ao fazer isso, é possível filtrar todos os sites cujo termo aparece exatamente como escrito, evitando o uso de sinônimos ou palavras similares.
 
-Perceba na figura \ref{fig:operadores1}, como os resultados apresentam variações da palavra “desenhada”, porém, não apresentam ela nos resultados. Já na \ref{fig:operadores2} é possível perceber que a palavra está presente nas páginas dos resultados.
+Perceba na figura \ref{fig:operadores1}, como os resultados apresentam variações da palavra “desenhada”, porém, não apresentam ela nos resultados. Já na figura \ref{fig:operadores2} é possível perceber que a palavra está presente nas páginas dos resultados.
 
 \begin{figure}[h]
 	\centering
@@ -27,7 +27,7 @@ Perceba na figura \ref{fig:operadores1}, como os resultados apresentam variaçõ
 \end{figure}
 
 
-Combinado com as aspas, existem outros dois operadores importantes para filtrar ainda mais os resultados, são eles: \textbf{AND} e \textbf{OR}. Estas são palavras no inglês que significam E e OU respectivamente. Assim podemos criar uma pesquisa onde os resultados serão de maçãs ou bananas e estas especificamente serão desenhadas.
+Combinado com as aspas, existem outros dois operadores importantes para filtrar ainda mais os resultados, são eles: \textbf{AND} e \textbf{OR}. Estas são palavras no inglês que significam, respectivamente, E e OU. Assim podemos criar uma pesquisa onde os resultados serão de maçãs ou bananas e estas especificamente serão desenhadas.
 
 \begin{figure}[h]
 	\centering
@@ -37,9 +37,9 @@ Combinado com as aspas, existem outros dois operadores importantes para filtrar 
 \end{figure}
 
 
-Olhares atentos a figura \ref{fig:operadores3} podem perceber a presença de outro elemento na pesquisa, os parênteses. Com eles é possível agrupar termos e pesquisas para facilitar a leitura e filtrar os resultados ainda mais. Sem a presença deles a pesquisa seria a seguinte: maçã OR banana AND “desenhada”, nela o motor iria trazer dados sobre maçãs ou bananas desenhadas, porém, com os parêntesis traremos resultados sobre maçãs ou bananas desenhadas.
+Note que na figura \ref{fig:operadores3} há a presença de outro elemento na pesquisa, os parênteses. Com eles é possível agrupar termos e pesquisas para facilitar a leitura e filtrar os resultados ainda mais. Sem a presença deles a pesquisa seria a seguinte: maçã OR banana AND “desenhada”, nela o motor iria trazer dados sobre maçãs ou bananas desenhadas, porém, com os parênteses traz resultados sobre maçãs ou bananas desenhadas.
 
-Agora imaginemos que não queremos trazer os dados sobre maçãs ou bananas verdes, pois precisamos filtrar apenas por imagens delas maduras. Assim surge o operador -, com ele é possível remover um termo da pesquisa, como demonstrado na figura \ref{fig:operadores4}.
+Agora suponha que não se quer trazer os dados sobre maçãs ou bananas verdes, pois se quer buscar apenas por imagens delas maduras. Assim surge o operador \textbf{-}, com ele é possível remover um termo da pesquisa, como demonstrado na figura \ref{fig:operadores4}.
 
 \begin{figure}[h]
 	\centering
@@ -48,15 +48,15 @@ Agora imaginemos que não queremos trazer os dados sobre maçãs ou bananas verd
 	\label{fig:operadores4}
 \end{figure}
 
-Estes são os operadores mais simples que o motor de pesquisa do Google oferece, porém não são todos, existem ainda os operadores complexos que irão filtrar ainda mais os resultados. São eles palavras específicas que serão utilizadas com : no final, ex.: site, inurl, filetype, define, before, after, entre outros.
+Estes são os operadores mais simples que o motor de pesquisa do Google oferece, porém não são todos, existem ainda os operadores complexos que irão filtrar ainda mais os resultados. São eles palavras específicas que serão utilizadas com : no final, ex.: \textbf{site}, \textbf{inurl}, \textbf{filetype}, \textbf{define}, \textbf{before}, \textbf{after}, dentre outros.
 
-Para explicar estes operadores vamos imaginar o seguinte caso de uso: um edital no site do IFRS Farroupilha que vimos, nós acessamos ele em alguma data no mês de Agosto de 2025. Sabemos que ele se referia a Certificação de Conhecimento. Com isso em mente podemos formular uma pesquisa direcionada:
+Para explicar estes operadores propõe-se o seguinte caso de uso: foi visto um edital no site do IFRS Farroupilha, o qual foi acessado em alguma data no mês de Agosto de 2025. Sabe-se que ele se referia a Certificação de Conhecimento. Com isso em mente pode-se formular uma pesquisa direcionada:
 
 \codeblock{"certificação de conhecimentos" AND site:ifrs.edu.br AND inurl:farroupilha AND after:2025-08-1}
 
-Esta pesquisa já é mais complexa que as outras, por isso é necessário explicá-la. Começamos com aquilo que sabemos com toda a certeza: o edital é sobre certificação de conhecimento, e mais, sabemos que este trecho estará presente no site, por isso, colocamos em aspas. Em seguida adicionamos o filtro \textbf{site}, com ele podemos especificar em qual site queremos pesquisar, no nosso caso no site do IFRS. Na sequência adicionamos o inurl, que irá filtrar pelo termo presente no link do site, no nosso caso, ele irá pegar o farroupilha presente no link. Por fim, adicionamos o after que irá filtrar por todos os resultados que o Google achar após a data de 1 de Agosto de 2025.
+Esta pesquisa já é mais complexa que as outras, por isso é necessário explicá-la. Começa com o termo-chave: o edital é sobre certificação de conhecimento, e mais, sabe-se que este trecho estará presente no site, por isso o uso de aspas. Em seguida há o uso do filtro \textbf{site}, com ele se especifica em qual site pesquisar, que no caso é o do IFRS. Na sequência se encontra o \textbf{inurl}, que irá filtrar pelo termo presente no link do site, isto é, ele irá detectar o termo "farroupilha" presente no link. Por fim, se tem o \textbf{after} que irá filtrar por todos os resultados que o Google achar após a data de 1 de Agosto de 2025.
 
-Ao observar a nossa pesquisa direcionada, demonstrada na  figura \ref{fig:operadores4}, é possível observar que o Google trouxe apenas um resultado que é justamente o que queríamos encontrar.
+Ao observar o resultado da pesquisa direcionada, demonstrada na figura \ref{fig:operadores4}, é possível observar que o Google trouxe apenas um resultado que é justamente o que se queria encontrar.
 
 \begin{figure}[h]
 	\centering
@@ -67,7 +67,7 @@ Ao observar a nossa pesquisa direcionada, demonstrada na  figura \ref{fig:operad
 
 Um detalhe importante a se observar é o formato que a data foi colocada. Na pesquisa foi utilizado a seguinte formatação: 2025-08-01. Este formato de data é o formato da ISO 8601 (\cite{ISOISO86011988}), ele especifica que a formatação deve seguir a seguinte ordem: ano, mês e dia separados por hífen.
 
-Agora que você já foi apresentado a como funcionam vários operadores e suas diferentes especificidades, você já é capaz de olhar a tabela 1 e destrinchar pesquisas para sua necessidade. Porém, se ainda restar alguma dúvida o próximo capítulo irá apresentar diferentes situações e pesquisas que irão atender a necessidade.
+Para referência, a tabela \ref{tab:operador1} apresenta os principais operadores de pesquisa e seus respectivos usos. Se ainda restar alguma dúvida, a próxima seção apresenta diferentes cenários de uso para exemplificar a aplicação dos operadores em pesquisas reais.
 
 \begin{table}[h]
 	\centering
