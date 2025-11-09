@@ -151,10 +151,13 @@ BoldItalicFont=*-BoldItalic
 \usepackage{setspace}
 \onehalfspacing
 
-\setcounter{secnumdepth}{4}
+% Numerar até o nível \paragraph
+\setcounter{secnumdepth}{3} % numera até \paragraph
+\setcounter{tocdepth}{2} 	% aparece no sumário
 
-% inclui no sumário
-\setcounter{tocdepth}{4} 
+% Formatação para \paragraph como “subsubsubsection”
+\titleformat{\paragraph}[block]{\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}{0pt}{1ex}{1ex}
 
 \usepackage{titlesec}
 \titlespacing*{\chapter}{0pt}{-1ex}{2ex}
@@ -363,7 +366,12 @@ BoldItalicFont=*-BoldItalic
 \input{sections/gmail/responder_encaminhar_marcar_emails.tex}
 
 \chapter{Agenda}
+\input{sections/agenda/introducao_google_agenda.tex}
 \input{sections/agenda/configuracoes.tex}
+\input{sections/agenda/dicas_e_boas_praticas.tex}
+\input{sections/agenda/gerenciamento_de_multiplas_agendas.tex}
+\input{sections/agenda/gerenciamento_entradas_no_calendario.tex}
+
 
 \chapter{Documentos Google}
 \input{sections/documentos/documentos}
