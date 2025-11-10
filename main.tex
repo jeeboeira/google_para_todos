@@ -34,8 +34,6 @@ BoldItalicFont=*-BoldItalic
 \newunicodechar{→}{\ensuremath{\rightarrow}}
 \usepackage{menukeys}
 
-% microtypography (melhora justificação)
-\usepackage{microtype}
 
 % ------------------------------------------------------------
 % LAYOUT E FIGURAS
@@ -155,20 +153,16 @@ BoldItalicFont=*-BoldItalic
 \setcounter{secnumdepth}{3} % numera até \paragraph
 \setcounter{tocdepth}{2} 	% aparece no sumário
 
-% Formatação para \paragraph como “subsubsubsection”
-\titleformat{\paragraph}[block]{\normalsize\bfseries}{\theparagraph}{1em}{}
-\titlespacing*{\paragraph}{0pt}{1ex}{1ex}
-
 \usepackage{titlesec}
 \titlespacing*{\chapter}{0pt}{-1ex}{2ex}
 \titlespacing*{\section}{0pt}{14pt}{8pt}
 \titlespacing*{\subsection}{0pt}{12pt}{6pt}
+\titlespacing*{\paragraph}{0pt}{6pt}{2pt}
 
 \titleformat{\section}{\Large\bfseries\color{primary}}{\thesection}{0.6em}{}
 \titleformat{\subsection}{\large\bfseries\color{ggray}}{\thesubsection}{0.6em}{}
 \titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{0.6em}{}
 \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}[]
-\titlespacing*{\paragraph}{0pt}{6pt}{2pt}
 
 
 % rotina de seleção de cor do capítulo (corrigida e simples)
@@ -311,12 +305,16 @@ BoldItalicFont=*-BoldItalic
 \fancyfoot[C]{\small\thepage}
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
+\setlength{\headheight}{13.6pt}
 
 % ------------------------------------------------------------
 % OUTRAS CONFIGS E AJUSTES
 % ------------------------------------------------------------
 \usepackage{csquotes} % já carregado acima (seguro repetir)
 \hbadness=10000 % suprime underfull warnings
+
+% microtypography (melhora justificação) deve ficar no fim do arquivo
+%\usepackage{microtype}
 
 % ------------------------------------------------------------
 % INÍCIO DO DOCUMENTO
