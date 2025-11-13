@@ -1,0 +1,2072 @@
+\glsdefs@newdocentry{aba}%
+{%
+name={Aba},%
+sort={Aba},%
+type={geral},%
+first={Aba},%
+firstplural={Abas},%
+text={Aba},%
+plural={Abas},%
+description={Parte de uma janela que permite abrir várias páginas ou seções ao mesmo tempo, como em um navegador.},%
+descriptionplural={Parte de uma janela que permite abrir várias páginas ou seções ao mesmo tempo, como em um navegador.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{algoritmo}%
+{%
+name={Algoritmo},%
+sort={Algoritmo},%
+type={geral},%
+first={Algoritmo},%
+firstplural={Algoritmos},%
+text={Algoritmo},%
+plural={Algoritmos},%
+description={Sequência de raciocínios, passos ou instruções definidas para alcançar um objetivo, sendo necessário que as etapas sejam finitas e executadas sistematicamente.},%
+descriptionplural={Sequência de raciocínios, passos ou instruções definidas para alcançar um objetivo, sendo necessário que as etapas sejam finitas e executadas sistematicamente.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aplicativos}%
+{%
+name={Aplicativos (Apps)},%
+sort={Aplicativos (Apps)},%
+type={geral},%
+first={Aplicativos (Apps)},%
+firstplural={Aplicativos (Apps)s},%
+text={Aplicativos (Apps)},%
+plural={Aplicativos (Apps)s},%
+description={Programas que você instala e usa no celular, tablet ou computador para realizar tarefas.},%
+descriptionplural={Programas que você instala e usa no celular, tablet ou computador para realizar tarefas.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{arquivo}%
+{%
+name={Arquivo},%
+sort={Arquivo},%
+type={geral},%
+first={Arquivo},%
+firstplural={Arquivos},%
+text={Arquivo},%
+plural={Arquivos},%
+description={Documento ou item salvo no computador, como textos, imagens ou vídeos.},%
+descriptionplural={Documento ou item salvo no computador, como textos, imagens ou vídeos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{backup}%
+{%
+name={Backup},%
+sort={Backup},%
+type={geral},%
+first={Backup},%
+firstplural={Backups},%
+text={Backup},%
+plural={Backups},%
+description={Cópia de segurança dos seus arquivos, feita para evitar a perda de dados em caso de problemas no dispositivo.},%
+descriptionplural={Cópia de segurança dos seus arquivos, feita para evitar a perda de dados em caso de problemas no dispositivo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{barrapesquisa}%
+{%
+name={Barra de pesquisa},%
+sort={Barra de pesquisa},%
+type={geral},%
+first={Barra de pesquisa},%
+firstplural={Barra de pesquisas},%
+text={Barra de pesquisa},%
+plural={Barra de pesquisas},%
+description={Campo onde você digita palavras para procurar informações ou arquivos.},%
+descriptionplural={Campo onde você digita palavras para procurar informações ou arquivos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{caractere}%
+{%
+name={Caractere},%
+sort={Caractere},%
+type={geral},%
+first={Caractere},%
+firstplural={Caracteres},%
+text={Caractere},%
+plural={Caracteres},%
+description={Cada símbolo utilizado na escrita digital, como letras, números, espaços ou sinais de pontuação.},%
+descriptionplural={Cada símbolo utilizado na escrita digital, como letras, números, espaços ou sinais de pontuação.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{card}%
+{%
+name={Card},%
+sort={Card},%
+type={geral},%
+first={Card},%
+firstplural={Cards},%
+text={Card},%
+plural={Cards},%
+description={Elemento visual usado em interfaces para apresentar informações de forma organizada e destacada, geralmente com imagem, título e descrição.},%
+descriptionplural={Elemento visual usado em interfaces para apresentar informações de forma organizada e destacada, geralmente com imagem, título e descrição.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cursor}%
+{%
+name={Cursor},%
+sort={Cursor},%
+type={geral},%
+first={Cursor},%
+firstplural={Cursors},%
+text={Cursor},%
+plural={Cursors},%
+description={Seta ou linha piscando na tela que mostra onde você está digitando ou clicando.},%
+descriptionplural={Seta ou linha piscando na tela que mostra onde você está digitando ou clicando.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{default}%
+{%
+name={Default},%
+sort={Default},%
+type={geral},%
+first={Default},%
+firstplural={Defaults},%
+text={Default},%
+plural={Defaults},%
+description={O modo padrão de algo.},%
+descriptionplural={O modo padrão de algo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{desktop}%
+{%
+name={Desktop (Área de trabalho)},%
+sort={Desktop (Área de trabalho)},%
+type={geral},%
+first={Desktop (Área de trabalho)},%
+firstplural={Desktop (Área de trabalho)s},%
+text={Desktop (Área de trabalho)},%
+plural={Desktop (Área de trabalho)s},%
+description={Tela principal do computador onde ficam ícones de arquivos, pastas e programas. Também pode significar o tipo de programa que roda de forma integrada ao computador, diferente de um site (web) ou aplicativo móvel.},%
+descriptionplural={Tela principal do computador onde ficam ícones de arquivos, pastas e programas. Também pode significar o tipo de programa que roda de forma integrada ao computador, diferente de um site (web) ou aplicativo móvel.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{diretorio}%
+{%
+name={Diretório (ou Pasta)},%
+sort={Diretório (ou Pasta)},%
+type={geral},%
+first={Diretório (ou Pasta)},%
+firstplural={Diretório (ou Pasta)s},%
+text={Diretório (ou Pasta)},%
+plural={Diretório (ou Pasta)s},%
+description={Local usado para guardar e organizar arquivos no computador.},%
+descriptionplural={Local usado para guardar e organizar arquivos no computador.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{download}%
+{%
+name={Download},%
+sort={Download},%
+type={geral},%
+first={Download},%
+firstplural={Downloads},%
+text={Download},%
+plural={Downloads},%
+description={Ação de copiar um arquivo da internet para o seu computador, celular ou outro dispositivo.},%
+descriptionplural={Ação de copiar um arquivo da internet para o seu computador, celular ou outro dispositivo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{extensoes}%
+{%
+name={Extensões},%
+sort={Extensões},%
+type={geral},%
+first={Extensões},%
+firstplural={Extensõess},%
+text={Extensões},%
+plural={Extensõess},%
+description={Programas extras que adicionam novas funções a um navegador ou aplicativo.},%
+descriptionplural={Programas extras que adicionam novas funções a um navegador ou aplicativo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{feedback}%
+{%
+name={Feedback},%
+sort={Feedback},%
+type={geral},%
+first={Feedback},%
+firstplural={Feedbacks},%
+text={Feedback},%
+plural={Feedbacks},%
+description={Informação de retorno fornecida sobre uma ação, desempenho ou resposta, com o objetivo de reforçar acertos ou indicar áreas para melhoria.},%
+descriptionplural={Informação de retorno fornecida sobre uma ação, desempenho ou resposta, com o objetivo de reforçar acertos ou indicar áreas para melhoria.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{googlemaps}%
+{%
+name={Google Maps},%
+sort={Google Maps},%
+type={geral},%
+first={Google Maps},%
+firstplural={Google Mapss},%
+text={Google Maps},%
+plural={Google Mapss},%
+description={Serviço de mapas online do Google que permite visualizar locais, traçar rotas e explorar regiões do mundo por meio de imagens de satélite e mapas interativos.},%
+descriptionplural={Serviço de mapas online do Google que permite visualizar locais, traçar rotas e explorar regiões do mundo por meio de imagens de satélite e mapas interativos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{html}%
+{%
+name={HTML},%
+sort={HTML},%
+type={geral},%
+first={HTML},%
+firstplural={HTMLs},%
+text={HTML},%
+plural={HTMLs},%
+description={Sigla para \textit {HyperText Markup Language}, utilizada para criar e estruturar páginas web.},%
+descriptionplural={Sigla para \textit {HyperText Markup Language}, utilizada para criar e estruturar páginas web.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{link}%
+{%
+name={Link},%
+sort={Link},%
+type={geral},%
+first={Link},%
+firstplural={Links},%
+text={Link},%
+plural={Links},%
+description={Endereço clicável que leva você a uma página da internet ou a um arquivo.},%
+descriptionplural={Endereço clicável que leva você a uma página da internet ou a um arquivo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{login}%
+{%
+name={Login},%
+sort={Login},%
+type={geral},%
+first={Login},%
+firstplural={Logins},%
+text={Login},%
+plural={Logins},%
+description={Processo de entrar em uma conta usando seu nome de usuário e senha para acessar serviços.},%
+descriptionplural={Processo de entrar em uma conta usando seu nome de usuário e senha para acessar serviços.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mobile}%
+{%
+name={Mobile},%
+sort={Mobile},%
+type={geral},%
+first={Mobile},%
+firstplural={Mobiles},%
+text={Mobile},%
+plural={Mobiles},%
+description={Dispositivo móvel.},%
+descriptionplural={Dispositivo móvel.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{nuvem}%
+{%
+name={Nuvem},%
+sort={Nuvem},%
+type={geral},%
+first={Nuvem},%
+firstplural={Nuvems},%
+text={Nuvem},%
+plural={Nuvems},%
+description={Espaço na internet onde você pode guardar arquivos e acessá-los de qualquer lugar com internet.},%
+descriptionplural={Espaço na internet onde você pode guardar arquivos e acessá-los de qualquer lugar com internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{offline}%
+{%
+name={Offline},%
+sort={Offline},%
+type={geral},%
+first={Offline},%
+firstplural={Offlines},%
+text={Offline},%
+plural={Offlines},%
+description={Quando um dispositivo não está conectado à internet.},%
+descriptionplural={Quando um dispositivo não está conectado à internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{online}%
+{%
+name={Online},%
+sort={Online},%
+type={geral},%
+first={Online},%
+firstplural={Onlines},%
+text={Online},%
+plural={Onlines},%
+description={Quando um dispositivo está conectado à internet.},%
+descriptionplural={Quando um dispositivo está conectado à internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pdf}%
+{%
+name={PDF},%
+sort={PDF},%
+type={geral},%
+first={PDF},%
+firstplural={PDFs},%
+text={PDF},%
+plural={PDFs},%
+description={Formato de arquivo que mantém a aparência original de textos, imagens e gráficos, permitindo que o documento seja visualizado e impresso da mesma forma em qualquer dispositivo.},%
+descriptionplural={Formato de arquivo que mantém a aparência original de textos, imagens e gráficos, permitindo que o documento seja visualizado e impresso da mesma forma em qualquer dispositivo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{popup}%
+{%
+name={Pop-up},%
+sort={Pop-up},%
+type={geral},%
+first={Pop-up},%
+firstplural={Pop-ups},%
+text={Pop-up},%
+plural={Pop-ups},%
+description={Janela ou elemento que aparece automaticamente na tela, geralmente para exibir mensagens, avisos ou anúncios.},%
+descriptionplural={Janela ou elemento que aparece automaticamente na tela, geralmente para exibir mensagens, avisos ou anúncios.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{qrcode}%
+{%
+name={QRCode},%
+sort={QRCode},%
+type={geral},%
+first={QRCode},%
+firstplural={QRCodes},%
+text={QRCode},%
+plural={QRCodes},%
+description={Código bidimensional que pode ser escaneado por câmeras ou aplicativos, direcionando o usuário a um site, texto ou outro conteúdo digital.},%
+descriptionplural={Código bidimensional que pode ser escaneado por câmeras ou aplicativos, direcionando o usuário a um site, texto ou outro conteúdo digital.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{software}%
+{%
+name={Software},%
+sort={Software},%
+type={geral},%
+first={Software},%
+firstplural={Softwares},%
+text={Software},%
+plural={Softwares},%
+description={Programa que você usa no computador ou celular para realizar tarefas, como escrever textos ou acessar a internet.},%
+descriptionplural={Programa que você usa no computador ou celular para realizar tarefas, como escrever textos ou acessar a internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spam}%
+{%
+name={Spam},%
+sort={Spam},%
+type={geral},%
+first={Spam},%
+firstplural={Spams},%
+text={Spam},%
+plural={Spams},%
+description={Mensagens indesejadas, geralmente enviadas em massa, que aparecem no e-mail ou em outros meios digitais.},%
+descriptionplural={Mensagens indesejadas, geralmente enviadas em massa, que aparecem no e-mail ou em outros meios digitais.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{upload}%
+{%
+name={Upload},%
+sort={Upload},%
+type={geral},%
+first={Upload},%
+firstplural={Uploads},%
+text={Upload},%
+plural={Uploads},%
+description={Ação de enviar um arquivo do seu dispositivo para a internet ou para um sistema online.},%
+descriptionplural={Ação de enviar um arquivo do seu dispositivo para a internet ou para um sistema online.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{url}%
+{%
+name={URL},%
+sort={URL},%
+type={geral},%
+first={URL},%
+firstplural={URLs},%
+text={URL},%
+plural={URLs},%
+description={Endereço que indica o local específico de um recurso localizado na internet.},%
+descriptionplural={Endereço que indica o local específico de um recurso localizado na internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{web}%
+{%
+name={Web},%
+sort={Web},%
+type={geral},%
+first={Web},%
+firstplural={Webs},%
+text={Web},%
+plural={Webs},%
+description={Conjunto de páginas e serviços acessados pela internet.},%
+descriptionplural={Conjunto de páginas e serviços acessados pela internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{workspace}%
+{%
+name={Workspace (Área de trabalho)},%
+sort={Workspace (Área de trabalho)},%
+type={geral},%
+first={Workspace (Área de trabalho)},%
+firstplural={Workspace (Área de trabalho)s},%
+text={Workspace (Área de trabalho)},%
+plural={Workspace (Área de trabalho)s},%
+description={Espaço virtual onde você organiza e acessa seus arquivos, projetos ou ferramentas dentro de um software.},%
+descriptionplural={Espaço virtual onde você organiza e acessa seus arquivos, projetos ou ferramentas dentro de um software.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zip}%
+{%
+name={.zip},%
+sort={.zip},%
+type={geral},%
+first={.zip},%
+firstplural={.zips},%
+text={.zip},%
+plural={.zips},%
+description={Formato de compactação de arquivos que reduz o tamanho dos dados e permite agrupar vários arquivos em um único pacote, facilitando o armazenamento e o envio.},%
+descriptionplural={Formato de compactação de arquivos que reduz o tamanho dos dados e permite agrupar vários arquivos em um único pacote, facilitando o armazenamento e o envio.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{areatransferencia}%
+{%
+name={Área de transferência},%
+sort={Área de transferência},%
+type={documentos},%
+first={Área de transferência},%
+firstplural={Área de transferências},%
+text={Área de transferência},%
+plural={Área de transferências},%
+description={Espaço temporário do sistema usado para armazenar dados copiados ou recortados, permitindo colá-los em outro local.},%
+descriptionplural={Espaço temporário do sistema usado para armazenar dados copiados ou recortados, permitindo colá-los em outro local.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{usb}%
+{%
+name={USB (Universal Serial Bus)},%
+sort={USB (Universal Serial Bus)},%
+type={documentos},%
+first={USB (Universal Serial Bus)},%
+firstplural={USB (Universal Serial Bus)s},%
+text={USB (Universal Serial Bus)},%
+plural={USB (Universal Serial Bus)s},%
+description={Padrão de conexão e comunicação que permite ligar periféricos ao computador, transmitindo também energia elétrica.},%
+descriptionplural={Padrão de conexão e comunicação que permite ligar periféricos ao computador, transmitindo também energia elétrica.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{libreofficewriter}%
+{%
+name={LibreOffice Writer},%
+sort={LibreOffice Writer},%
+type={documentos},%
+first={LibreOffice Writer},%
+firstplural={LibreOffice Writers},%
+text={LibreOffice Writer},%
+plural={LibreOffice Writers},%
+description={Processador de textos de código aberto e gratuito, utilizado para criar e editar documentos compatíveis com o formato .odt.},%
+descriptionplural={Processador de textos de código aberto e gratuito, utilizado para criar e editar documentos compatíveis com o formato .odt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{microsoftword}%
+{%
+name={Microsoft Word},%
+sort={Microsoft Word},%
+type={documentos},%
+first={Microsoft Word},%
+firstplural={Microsoft Words},%
+text={Microsoft Word},%
+plural={Microsoft Words},%
+description={Processador de textos da Microsoft com recursos avançados de formatação, compatível com o formato .docx.},%
+descriptionplural={Processador de textos da Microsoft com recursos avançados de formatação, compatível com o formato .docx.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ortografia}%
+{%
+name={Ortografia},%
+sort={Ortografia},%
+type={documentos},%
+first={Ortografia},%
+firstplural={Ortografias},%
+text={Ortografia},%
+plural={Ortografias},%
+description={Conjunto de regras que define o modo correto de escrever as palavras de uma língua.},%
+descriptionplural={Conjunto de regras que define o modo correto de escrever as palavras de uma língua.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gramatica}%
+{%
+name={Gramática},%
+sort={Gramática},%
+type={documentos},%
+first={Gramática},%
+firstplural={Gramáticas},%
+text={Gramática},%
+plural={Gramáticas},%
+description={Estudo da estrutura das palavras e das regras que governam a combinação dessas palavras em frases e textos.},%
+descriptionplural={Estudo da estrutura das palavras e das regras que governam a combinação dessas palavras em frases e textos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{celula}%
+{%
+name={Célula},%
+sort={Célula},%
+type={planilhas},%
+first={Célula},%
+firstplural={Células},%
+text={Célula},%
+plural={Células},%
+description={Espaço individual em uma planilha onde você pode digitar números, textos ou fórmulas.},%
+descriptionplural={Espaço individual em uma planilha onde você pode digitar números, textos ou fórmulas.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dashboard}%
+{%
+name={Dashboard (Painel de controle)},%
+sort={Dashboard (Painel de controle)},%
+type={planilhas},%
+first={Dashboard (Painel de controle)},%
+firstplural={Dashboard (Painel de controle)s},%
+text={Dashboard (Painel de controle)},%
+plural={Dashboard (Painel de controle)s},%
+description={Tela que mostra informações organizadas de forma visual para ajudar na análise e tomada de decisões.},%
+descriptionplural={Tela que mostra informações organizadas de forma visual para ajudar na análise e tomada de decisões.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ecommerce}%
+{%
+name={E-commerce (Comércio eletrônico)},%
+sort={E-commerce (Comércio eletrônico)},%
+type={planilhas},%
+first={E-commerce (Comércio eletrônico)},%
+firstplural={E-commerce (Comércio eletrônico)s},%
+text={E-commerce (Comércio eletrônico)},%
+plural={E-commerce (Comércio eletrônico)s},%
+description={Loja ou negócio que vende produtos ou serviços pela internet.},%
+descriptionplural={Loja ou negócio que vende produtos ou serviços pela internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{marketplaces}%
+{%
+name={Marketplaces},%
+sort={Marketplaces},%
+type={planilhas},%
+first={Marketplaces},%
+firstplural={Marketplacess},%
+text={Marketplaces},%
+plural={Marketplacess},%
+description={Plataformas online onde vários vendedores oferecem produtos ou serviços, como se fosse um shopping virtual.},%
+descriptionplural={Plataformas online onde vários vendedores oferecem produtos ou serviços, como se fosse um shopping virtual.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{script}%
+{%
+name={Script},%
+sort={Script},%
+type={planilhas},%
+first={Script},%
+firstplural={Scripts},%
+text={Script},%
+plural={Scripts},%
+description={Conjunto de comandos ou instruções usados para automatizar tarefas em programas ou páginas da internet.},%
+descriptionplural={Conjunto de comandos ou instruções usados para automatizar tarefas em programas ou páginas da internet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{braille}%
+{%
+name={Braille},%
+sort={Braille},%
+type={apresentacoes},%
+first={Braille},%
+firstplural={Brailles},%
+text={Braille},%
+plural={Brailles},%
+description={Sistema de escrita e leitura tátil para pessoas cegas ou com baixa visão, composto por combinações de pontos em relevo.},%
+descriptionplural={Sistema de escrita e leitura tátil para pessoas cegas ou com baixa visão, composto por combinações de pontos em relevo.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{layout}%
+{%
+name={Layout},%
+sort={Layout},%
+type={apresentacoes},%
+first={Layout},%
+firstplural={Layouts},%
+text={Layout},%
+plural={Layouts},%
+description={Organização visual dos elementos em uma página, tela ou documento.},%
+descriptionplural={Organização visual dos elementos em uma página, tela ou documento.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{notificacao}%
+{%
+name={Notificação},%
+sort={Notificação},%
+type={apresentacoes},%
+first={Notificação},%
+firstplural={Notificaçãos},%
+text={Notificação},%
+plural={Notificaçãos},%
+description={Mensagem ou alerta gerado por um aplicativo para informar o usuário sobre eventos ou ações que requerem atenção.},%
+descriptionplural={Mensagem ou alerta gerado por um aplicativo para informar o usuário sobre eventos ou ações que requerem atenção.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{slide}%
+{%
+name={Slide},%
+sort={Slide},%
+type={apresentacoes},%
+first={Slide},%
+firstplural={Slides},%
+text={Slide},%
+plural={Slides},%
+description={Página individual de uma apresentação digital usada para exibir informações visuais e textuais.},%
+descriptionplural={Página individual de uma apresentação digital usada para exibir informações visuais e textuais.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ics}%
+{%
+name={.ics},%
+sort={.ics},%
+type={agendagmail},%
+first={.ics},%
+firstplural={.icss},%
+text={.ics},%
+plural={.icss},%
+description={Extensão de arquivo utilizada para armazenar informações de calendário, como eventos e compromissos.},%
+descriptionplural={Extensão de arquivo utilizada para armazenar informações de calendário, como eventos e compromissos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{caldav}%
+{%
+name={CalDAV},%
+sort={CalDAV},%
+type={agendagmail},%
+first={CalDAV},%
+firstplural={CalDAVs},%
+text={CalDAV},%
+plural={CalDAVs},%
+description={Protocolo de internet que permite o acesso e a sincronização de calendários entre dispositivos e aplicativos.},%
+descriptionplural={Protocolo de internet que permite o acesso e a sincronização de calendários entre dispositivos e aplicativos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{chat}%
+{%
+name={Chat},%
+sort={Chat},%
+type={agendagmail},%
+first={Chat},%
+firstplural={Chats},%
+text={Chat},%
+plural={Chats},%
+description={Aplicativo do Google para enviar mensagens instantâneas e colaborar em tempo real.},%
+descriptionplural={Aplicativo do Google para enviar mensagens instantâneas e colaborar em tempo real.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{email}%
+{%
+name={E-mail},%
+sort={E-mail},%
+type={agendagmail},%
+first={E-mail},%
+firstplural={E-mails},%
+text={E-mail},%
+plural={E-mails},%
+description={Serviço de envio e recebimento de mensagens digitais pela internet, podendo incluir textos e anexos.},%
+descriptionplural={Serviço de envio e recebimento de mensagens digitais pela internet, podendo incluir textos e anexos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{meet}%
+{%
+name={Meet},%
+sort={Meet},%
+type={agendagmail},%
+first={Meet},%
+firstplural={Meets},%
+text={Meet},%
+plural={Meets},%
+description={Plataforma do Google para videoconferências e reuniões online.},%
+descriptionplural={Plataforma do Google para videoconferências e reuniões online.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{phishing}%
+{%
+name={Phishing},%
+sort={Phishing},%
+type={agendagmail},%
+first={Phishing},%
+firstplural={Phishings},%
+text={Phishing},%
+plural={Phishings},%
+description={Tipo de golpe digital que tenta enganar o usuário para obter informações pessoais por meio de mensagens falsas.},%
+descriptionplural={Tipo de golpe digital que tenta enganar o usuário para obter informações pessoais por meio de mensagens falsas.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tooltip}%
+{%
+name={Tooltip},%
+sort={Tooltip},%
+type={agendagmail},%
+first={Tooltip},%
+firstplural={Tooltips},%
+text={Tooltip},%
+plural={Tooltips},%
+description={Pequena caixa de texto que aparece quando o usuário passa o cursor sobre um elemento, exibindo uma breve explicação ou dica.},%
+descriptionplural={Pequena caixa de texto que aparece quando o usuário passa o cursor sobre um elemento, exibindo uma breve explicação ou dica.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{canva}%
+{%
+name={Canva},%
+sort={Canva},%
+type={drivebusca},%
+first={Canva},%
+firstplural={Canvas},%
+text={Canva},%
+plural={Canvas},%
+description={Plataforma de design gráfico para criação de conteúdo visual como artes, pôsteres e apresentações.},%
+descriptionplural={Plataforma de design gráfico para criação de conteúdo visual como artes, pôsteres e apresentações.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{docusign}%
+{%
+name={DocuSign},%
+sort={DocuSign},%
+type={drivebusca},%
+first={DocuSign},%
+firstplural={DocuSigns},%
+text={DocuSign},%
+plural={DocuSigns},%
+description={Plataforma online de assinatura eletrônica e gerenciamento de contratos.},%
+descriptionplural={Plataforma online de assinatura eletrônica e gerenciamento de contratos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gatilho}%
+{%
+name={Gatilho},%
+sort={Gatilho},%
+type={drivebusca},%
+first={Gatilho},%
+firstplural={Gatilhos},%
+text={Gatilho},%
+plural={Gatilhos},%
+description={Evento ou condição que inicia automaticamente uma sequência de ações em um processo de automação.},%
+descriptionplural={Evento ou condição que inicia automaticamente uma sequência de ações em um processo de automação.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{googleads}%
+{%
+name={Google Ads},%
+sort={Google Ads},%
+type={drivebusca},%
+first={Google Ads},%
+firstplural={Google Adss},%
+text={Google Ads},%
+plural={Google Adss},%
+description={Plataforma de publicidade online do Google para criar anúncios pagos exibidos em resultados de pesquisa e sites parceiros.},%
+descriptionplural={Plataforma de publicidade online do Google para criar anúncios pagos exibidos em resultados de pesquisa e sites parceiros.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{googlebusiness}%
+{%
+name={Google Business},%
+sort={Google Business},%
+type={drivebusca},%
+first={Google Business},%
+firstplural={Google Businesss},%
+text={Google Business},%
+plural={Google Businesss},%
+description={Ferramenta do Google que ajuda empresas a gerenciar sua presença online.},%
+descriptionplural={Ferramenta do Google que ajuda empresas a gerenciar sua presença online.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{marketplace}%
+{%
+name={Google Workspace Marketplace},%
+sort={Google Workspace Marketplace},%
+type={drivebusca},%
+first={Google Workspace Marketplace},%
+firstplural={Google Workspace Marketplaces},%
+text={Google Workspace Marketplace},%
+plural={Google Workspace Marketplaces},%
+description={Loja online de aplicativos e extensões que adicionam funcionalidades aos serviços do Google Workspace.},%
+descriptionplural={Loja online de aplicativos e extensões que adicionam funcionalidades aos serviços do Google Workspace.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{homepage}%
+{%
+name={Homepage (Página inicial)},%
+sort={Homepage (Página inicial)},%
+type={drivebusca},%
+first={Homepage (Página inicial)},%
+firstplural={Homepage (Página inicial)s},%
+text={Homepage (Página inicial)},%
+plural={Homepage (Página inicial)s},%
+description={Primeira página que aparece ao abrir um site ou navegador.},%
+descriptionplural={Primeira página que aparece ao abrir um site ou navegador.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ifttt}%
+{%
+name={IFTTT},%
+sort={IFTTT},%
+type={drivebusca},%
+first={IFTTT},%
+firstplural={IFTTTs},%
+text={IFTTT},%
+plural={IFTTTs},%
+description={Plataforma que permite criar cadeias de automação com base na lógica "Se isso acontecer, então faça aquilo".},%
+descriptionplural={Plataforma que permite criar cadeias de automação com base na lógica "Se isso acontecer, então faça aquilo".},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{keep}%
+{%
+name={Keep (Google Keep)},%
+sort={Keep (Google Keep)},%
+type={drivebusca},%
+first={Keep (Google Keep)},%
+firstplural={Keep (Google Keep)s},%
+text={Keep (Google Keep)},%
+plural={Keep (Google Keep)s},%
+description={Aplicativo do Google para criar notas, listas e lembretes.},%
+descriptionplural={Aplicativo do Google para criar notas, listas e lembretes.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{malware}%
+{%
+name={Malware (Software Malicioso)},%
+sort={Malware (Software Malicioso)},%
+type={drivebusca},%
+first={Malware (Software Malicioso)},%
+firstplural={Malware (Software Malicioso)s},%
+text={Malware (Software Malicioso)},%
+plural={Malware (Software Malicioso)s},%
+description={Termo para softwares criados com intenção de causar danos ou roubar dados.},%
+descriptionplural={Termo para softwares criados com intenção de causar danos ou roubar dados.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{miro}%
+{%
+name={Miro},%
+sort={Miro},%
+type={drivebusca},%
+first={Miro},%
+firstplural={Miros},%
+text={Miro},%
+plural={Miros},%
+description={Plataforma online usada por equipes para criação de fluxogramas, mapas mentais e colaboração visual.},%
+descriptionplural={Plataforma online usada por equipes para criação de fluxogramas, mapas mentais e colaboração visual.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{modeloer}%
+{%
+name={Modelo ER (Entidade-Relacionamento)},%
+sort={Modelo ER (Entidade-Relacionamento)},%
+type={drivebusca},%
+first={Modelo ER (Entidade-Relacionamento)},%
+firstplural={Modelo ER (Entidade-Relacionamento)s},%
+text={Modelo ER (Entidade-Relacionamento)},%
+plural={Modelo ER (Entidade-Relacionamento)s},%
+description={Diagrama visual usado para planejar e estruturar um banco de dados.},%
+descriptionplural={Diagrama visual usado para planejar e estruturar um banco de dados.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{machinelearning}%
+{%
+name={Modelos de Machine Learning},%
+sort={Modelos de Machine Learning},%
+type={drivebusca},%
+first={Modelos de Machine Learning},%
+firstplural={Modelos de Machine Learnings},%
+text={Modelos de Machine Learning},%
+plural={Modelos de Machine Learnings},%
+description={Algoritmos treinados com grandes volumes de dados para identificar padrões e realizar previsões ou classificações.},%
+descriptionplural={Algoritmos treinados com grandes volumes de dados para identificar padrões e realizar previsões ou classificações.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{notebook}%
+{%
+name={Notebook},%
+sort={Notebook},%
+type={drivebusca},%
+first={Notebook},%
+firstplural={Notebooks},%
+text={Notebook},%
+plural={Notebooks},%
+description={Arquivo interativo que combina anotações de texto, código executável, gráficos e resultados.},%
+descriptionplural={Arquivo interativo que combina anotações de texto, código executável, gráficos e resultados.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{pandadoc}%
+{%
+name={PandaDoc},%
+sort={PandaDoc},%
+type={drivebusca},%
+first={PandaDoc},%
+firstplural={PandaDocs},%
+text={PandaDoc},%
+plural={PandaDocs},%
+description={Plataforma para automação do fluxo de documentos de vendas e assinatura eletrônica.},%
+descriptionplural={Plataforma para automação do fluxo de documentos de vendas e assinatura eletrônica.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zapier}%
+{%
+name={Zapier},%
+sort={Zapier},%
+type={drivebusca},%
+first={Zapier},%
+firstplural={Zapiers},%
+text={Zapier},%
+plural={Zapiers},%
+description={Plataforma que integra diferentes aplicativos e serviços web para automatizar fluxos de trabalho.},%
+descriptionplural={Plataforma que integra diferentes aplicativos e serviços web para automatizar fluxos de trabalho.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{escalalinear}%
+{%
+name={Escala Linear},%
+sort={Escala Linear},%
+type={formularios},%
+first={Escala Linear},%
+firstplural={Escala Linears},%
+text={Escala Linear},%
+plural={Escala Linears},%
+description={Tipo de pergunta em formulários que utiliza uma escala numérica para quantificar opinião ou satisfação.},%
+descriptionplural={Tipo de pergunta em formulários que utiliza uma escala numérica para quantificar opinião ou satisfação.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{iframe}%
+{%
+name={Iframe},%
+sort={Iframe},%
+type={formularios},%
+first={Iframe},%
+firstplural={Iframes},%
+text={Iframe},%
+plural={Iframes},%
+description={Elemento HTML usado para incorporar outro conteúdo dentro de uma página web.},%
+descriptionplural={Elemento HTML usado para incorporar outro conteúdo dentro de uma página web.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{template}%
+{%
+name={Template},%
+sort={Template},%
+type={formularios},%
+first={Template},%
+firstplural={Templates},%
+text={Template},%
+plural={Templates},%
+description={Estrutura pré-definida de um formulário com layout e conteúdo base para simplificar a criação de documentos.},%
+descriptionplural={Estrutura pré-definida de um formulário com layout e conteúdo base para simplificar a criação de documentos.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

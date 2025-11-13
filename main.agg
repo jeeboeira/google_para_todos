@@ -1,0 +1,22 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{C}\relax \glsresetentrylist %
+\glossentry{chat}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{51}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{56}}}\glsgroupskip
+\glsgroupheading{E}\relax \glsresetentrylist %
+\glossentry{email}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{129}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{meet}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{32}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{48}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{51}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{56}}}\glsgroupskip
+\glsgroupheading{P}\relax \glsresetentrylist %
+\glossentry{phishing}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{29}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{58}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{74}}}%
+\end{theglossary}\glossarypostamble

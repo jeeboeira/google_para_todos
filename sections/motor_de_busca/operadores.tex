@@ -3,7 +3,7 @@
 
 \section{Operadores}
 
-A ferramenta permite a pesquisa digitando qualquer termo na barra de pesquisa, porém, para melhor utilizar o poder dela, é necessário aprender sobre os operadores de pesquisa. Eles são termos específicos que, ao serem digitados, permitem alterar o comportamento da ferramenta como um todo, podendo aumentar a precisão dos resultados.
+A ferramenta permite a pesquisa digitando qualquer termo na \gls{barrapesquisa}, porém, para melhor utilizar o poder dela, é necessário aprender sobre os operadores de pesquisa. Eles são termos específicos que, ao serem digitados, permitem alterar o comportamento da ferramenta como um todo, podendo aumentar a precisão dos resultados.
 
 O operador mais simples que se pode usar é colocar palavras entre aspas. Ao fazer isso, é possível filtrar todos os sites cujo termo aparece exatamente como escrito, evitando o uso de sinônimos ou palavras similares.
 
@@ -54,7 +54,7 @@ Para explicar estes operadores propõe-se o seguinte caso de uso: foi visto um e
 
 \codeblock{"certificação de conhecimentos" AND site:ifrs.edu.br AND inurl:farroupilha AND after:2025-08-1}
 
-Esta pesquisa já é mais complexa que as outras, por isso é necessário explicá-la. Começa com o termo-chave: o edital é sobre certificação de conhecimento, e mais, sabe-se que este trecho estará presente no site, por isso o uso de aspas. Em seguida há o uso do filtro \textbf{site}, com ele se especifica em qual site pesquisar, que no caso é o do IFRS. Na sequência se encontra o \textbf{inurl}, que irá filtrar pelo termo presente no link do site, isto é, ele irá detectar o termo "farroupilha" presente no link. Por fim, se tem o \textbf{after} que irá filtrar por todos os resultados que o Google achar após a data de 1 de Agosto de 2025.
+Esta pesquisa já é mais complexa que as outras, por isso é necessário explicá-la. Começa com o termo-chave: o edital é sobre certificação de conhecimento, e mais, sabe-se que este trecho estará presente no site, por isso o uso de aspas. Em seguida há o uso do filtro \textbf{site}, com ele se especifica em qual site pesquisar, que no caso é o do IFRS. Na sequência se encontra o \textbf{inurl}, que irá filtrar pelo termo presente no \gls{link} do site, isto é, ele irá detectar o termo "farroupilha" presente no \gls{link}. Por fim, se tem o \textbf{after} que irá filtrar por todos os resultados que o Google achar após a data de 1 de Agosto de 2025.
 
 Ao observar o resultado da pesquisa direcionada, demonstrada na figura \ref{fig:operadores4}, é possível observar que o Google trouxe apenas um resultado que é justamente o que se queria encontrar.
 
@@ -85,7 +85,7 @@ Para referência, a tabela \ref{tab:operador1} apresenta os principais operadore
 		\addlinespace
 		(...) & Agrupa termos de pesquisa & (maçã OR morango) AND vermelho \\
 		\addlinespace
-		filetype & Pesquisa pelo tipo de documento & filetype:pdf \\
+		filetype & Pesquisa pelo tipo de documento & filetype:\gls{pdf} \\
 		\addlinespace
 		site & Pesquisa dentro de um site & site:ifrs.edu.br \\
 		\addlinespace
@@ -93,7 +93,7 @@ Para referência, a tabela \ref{tab:operador1} apresenta os principais operadore
 		\addlinespace
 		intitle & Pesquisa pelo termo presente no título do site & intitle:educação \\
 		\addlinespace
-		inurl & Pesquisa pelo termo presente na URL & inurl:farroupilha \\
+		inurl & Pesquisa pelo termo presente na \gls{url} & inurl:farroupilha \\
 		\addlinespace
 		intext & Pesquisa pelo termo presente no texto do site & intext:certificação \\
 		\addlinespace

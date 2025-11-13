@@ -1,0 +1,13 @@
+\glossarysection[\glossarytoctitle]{\glossarytitle}\glossarypreamble
+\begin{theglossary}\glossaryheader
+\glsgroupheading{D}\relax \glsresetentrylist %
+\glossentry{dashboard}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{94}\delimN 
+		\setentrycounter[]{page}\glsnumberformat{122}}}\glsgroupskip
+\glsgroupheading{M}\relax \glsresetentrylist %
+\glossentry{marketplace}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{26\delimN 27}}}\glsgroupskip
+\glsgroupheading{S}\relax \glsresetentrylist %
+\glossentry{script}{\glossaryentrynumbers{\relax 
+		\setentrycounter[]{page}\glsnumberformat{99}}}%
+\end{theglossary}\glossarypostamble
