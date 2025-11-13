@@ -86,12 +86,23 @@ BoldItalicFont=*-BoldItalic
 % ------------------------------------------------------------
 % LINKS, BIBLATEX E HYPERREF
 % ------------------------------------------------------------
+\usepackage{hyperref}
+\usepackage[
+automake
+, nomain
+% , nonumberlist
+]{glossaries-extra}
+\input{sections/extras/definicao_glossario.tex}
+\renewcommand*{\glossarysection}[2][]{%
+	\section*{#2}%
+	\addcontentsline{toc}{section}{#2}%
+}
+
 \usepackage{indentfirst}
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{sections/motor_de_busca/Motor de Busca.bib}
 \addbibresource{sections/google_drive/google_drive.bib}
 
-\usepackage{hyperref}
 \newif\ifprint
 \printfalse % tela por padrão
 % \printtrue % descomente para modo impressão
@@ -313,7 +324,7 @@ BoldItalicFont=*-BoldItalic
 \usepackage{csquotes} % já carregado acima (seguro repetir)
 \hbadness=10000 % suprime underfull warnings
 
-% microtypography (melhora justificação) deve ficar no fim do arquivo
+% microtypography (melhora justificação) deve ficar no fim do \gls{arquivo}
 %\usepackage{microtype}
 
 % ------------------------------------------------------------
@@ -364,11 +375,12 @@ BoldItalicFont=*-BoldItalic
 \input{sections/gmail/responder_encaminhar_marcar_emails.tex}
 
 \chapter{Agenda}
-\input{sections/agenda/introducao_google_agenda.tex}
-\input{sections/agenda/configuracoes.tex}
-\input{sections/agenda/dicas_e_boas_praticas.tex}
-\input{sections/agenda/gerenciamento_de_multiplas_agendas.tex}
-\input{sections/agenda/gerenciamento_entradas_no_calendario.tex}
+\vfill
+%\input{sections/agenda/introducao_google_agenda.tex}
+%\input{sections/agenda/configuracoes.tex}
+%\input{sections/agenda/dicas_e_boas_praticas.tex}
+%\input{sections/agenda/gerenciamento_de_multiplas_agendas.tex}
+%\input{sections/agenda/gerenciamento_entradas_no_calendario.tex}
 
 \chapter{Documentos Google}
 \input{sections/documentos/documentos}
@@ -400,6 +412,13 @@ BoldItalicFont=*-BoldItalic
 \input{sections/slides/colaboracao_e_compartilhamento.tex}
 \input{sections/slides/aplicar_temas.tex}
 \input{sections/slides/dicas_e_boas_praticas.tex}
+
+
+\chapter{Glossario}
+\input{sections/extras/glossario.tex}
+
+\chapter{Considerações Finais e Agradecimentos}
+\input{sections/extras/agradecimentos.tex}
 
 \vfill
 
