@@ -45,6 +45,7 @@ BoldItalicFont=*-BoldItalic
 \usepackage{booktabs}
 \usepackage{array}
 \usepackage{svg}
+\usepackage{multicol}
 
 % ------------------------------------------------------------
 % CORES
@@ -103,6 +104,12 @@ automake
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \addbibresource{sections/motor_de_busca/Motor de Busca.bib}
 \addbibresource{sections/google_drive/google_drive.bib}
+\addbibresource{references/slides.bib}
+\addbibresource{references/gmail/introducao_gmail.bib}
+\addbibresource{references/gmail/dicas_e_boas_praticas.bib}
+\addbibresource{references/documentos/trabalhando_com_estilos.bib}
+\addbibresource{references/agenda/introducao_google_agenda.bib}
+\addbibresource{references/agenda/dicas_e_boas_praticas.bib}
 
 
 \newif\ifprint
@@ -436,7 +443,7 @@ automake
 \input{sections/slides/aplicar_temas.tex}
 \input{sections/slides/dicas_e_boas_praticas.tex}
 
-\chapter{Glossario}
+\chapter{Glossário}
 \input{sections/extras/glossario.tex}
 %\listoffigures
 %\listoftables
@@ -446,6 +453,7 @@ automake
 
 \vfill
 
+\nocite{*}
 \printbibliography[heading=bibnumbered,title={Bibliografia}]
 
 \end{document}
