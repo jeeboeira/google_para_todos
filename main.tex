@@ -287,6 +287,35 @@ automake
 	\fi
 }
 
+% Background for cover pages
+\newcommand{\faixa}{%
+	\setchaptercolor
+\begin{tikzpicture}[remember picture,overlay]
+    % pontos no topo: 0%, 25%, 50%, 75%, 100%
+    \coordinate (P0) at (current page.north west);
+    \coordinate (P1) at ($(current page.north west)!0.25!(current page.north east)$);
+    \coordinate (P2) at ($(current page.north west)!0.50!(current page.north east)$);
+    \coordinate (P3) at ($(current page.north west)!0.75!(current page.north east)$);
+    \coordinate (P4) at (current page.north east);
+
+    % faixa de 0 a 25%
+    \fill[catDocs]
+        (P0) rectangle ([yshift=-0.8cm]P1);
+
+    % faixa de 25 a 50%
+	\fill[catPlanilhas]
+        (P1) rectangle ([yshift=-0.8cm]P2);
+
+    % faixa de 50 a 75%
+    \fill[catSlides]
+        (P2) rectangle ([yshift=-0.8cm]P3);
+
+    % faixa de 75 a 100% (se quiser usar)
+    \fill[catGmail]
+        (P3) rectangle ([yshift=-0.8cm]P4);
+\end{tikzpicture}
+	\vspace*{-1.5cm}
+}
 % ------------------------------------------------------------
 % CAIXAS VISUAIS
 % ------------------------------------------------------------
@@ -342,6 +371,7 @@ automake
 % ------------------------------------------------------------
 \begin{document}
 	\input{frontmatter/capa.tex}
+	\input{frontmatter/contracapa.tex}
 	% pré-texto em romanos
 	\pagenumbering{roman}
 	\tableofcontents
@@ -357,14 +387,14 @@ automake
 \input{sections/introducao/workspace_escolha_ideal.tex}
 \input{sections/introducao/sobre_as_ferramentas.tex}
 \input{sections/introducao/conclusao.tex}
-%
+% 
 \chapter{Motor de Busca}
 \input{sections/motor_de_busca/introducao.tex}
 \input{sections/motor_de_busca/visao_geral.tex}
 \input{sections/motor_de_busca/operadores.tex}
 \input{sections/motor_de_busca/ideias_de_uso.tex}
 \input{sections/motor_de_busca/boas_praticas.tex}
-%
+% 
 \chapter{Google Drive}
 \input{sections/google_drive/introducao.tex}
 \input{sections/google_drive/compartilhamento_e_permissoes.tex}
@@ -372,7 +402,7 @@ automake
 \input{sections/google_drive/sincronizacao_e_backup.tex}
 \input{sections/google_drive/integracao_ferramentas.tex}
 \input{sections/google_drive/colaboracao.tex}
-%
+% 
 \chapter{Formulários}
 \input{sections/forms/introducao_ao_google_forms.tex}
 \input{sections/forms/acesso_a_ferramenta.tex}
@@ -385,7 +415,7 @@ automake
 \input{sections/forms/compartilhamento_do_formulario.tex}
 \input{sections/forms/coleta_e_analise_de_respostas.tex}
 \input{sections/forms/dicas_e_boas_praticas.tex}
-%
+% 
 \chapter{Gmail}
 \input{sections/gmail/introducao_gmail.tex}
 \input{sections/gmail/categorias_marcadores_filtros.tex}
@@ -394,14 +424,14 @@ automake
 \input{sections/gmail/escrever_enviar_download_anexos_emails_com_estrela.tex}
 \input{sections/gmail/exclusao_reg_leitura_adiar.tex}
 \input{sections/gmail/responder_encaminhar_marcar_emails.tex}
-%
+% 
 \chapter{Agenda}
 \input{sections/agenda/introducao_google_agenda.tex}
 \input{sections/agenda/configuracoes.tex}
 \input{sections/agenda/dicas_e_boas_praticas.tex}
 \input{sections/agenda/gerenciamento_de_multiplas_agendas.tex}
 \input{sections/agenda/gerenciamento_entradas_no_calendario.tex}
-%
+% 
 \chapter{Documentos Google}
 \input{sections/documentos/introducao_documentos.tex}
 \input{sections/documentos/menu_inserir}
@@ -417,9 +447,8 @@ automake
 \input{sections/documentos/guias_de_documentos.tex}
 \input{sections/documentos/extensoes.tex}
 \input{sections/documentos/cabecalho_e_rodape.tex}
-%\input{sections/documentos/documentos}
 \input{sections/documentos/exemplo_pratico_confeccao_curriculo.tex}
-%
+% 
 \chapter{Planilhas}
 \input{sections/planilhas/introducao.tex}
 \input{sections/planilhas/barra.tex}
@@ -429,7 +458,7 @@ automake
 \input{sections/planilhas/tabelas.tex}
 \input{sections/planilhas/compartilhamento.tex}
 \input{sections/planilhas/dicas.tex}
-%
+% 
 \chapter{Apresentações}
 \input{sections/slides/introducao.tex}
 \input{sections/slides/arquivo.tex}
@@ -449,8 +478,8 @@ automake
 
 \chapter{Glossário}
 \input{sections/extras/glossario.tex}
-%\listoffigures
-%\listoftables
+\listoffigures
+\listoftables
 
 \chapter{Considerações Finais e Agradecimentos}
 \input{sections/extras/agradecimentos.tex}
